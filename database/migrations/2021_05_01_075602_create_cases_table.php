@@ -14,8 +14,17 @@ class CreateCasesTable extends Migration
     public function up()
     {
         Schema::create('cases', function (Blueprint $table) {
-            $table->id();
-            $table->timestamps();
+            $table->id("caseNumber");
+            $table->timestamp("date");
+            $table->string("statement");
+            $table->string("remarks");
+            $table->string("sectionLaw");
+            $table->string("status");
+            $table->unsignedBigInteger('suspect_id');
+            $table->unsignedBigInteger('investigation_officer');
+
+            $table->index("suspect_id");
+            $table->index("investigation_officer");
         });
     }
 

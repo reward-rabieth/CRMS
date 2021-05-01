@@ -11,12 +11,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="637d2deb-9e0f-4924-89fd-4d6288848bd1" name="Default Changelist" comment="Migrations">
-      <change beforePath="$PROJECT_DIR$/app/Models/CasesModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Cases.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/RolesModel.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/SuspectsModel.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2021_05_01_075737_create_cases_models_table.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2021_05_01_075816_create_roles_models_table.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2021_05_01_075842_create_suspects_models_table.php" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Models/CrimeCategory.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2021_05_01_083004_create_crime_categories_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Cases.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Cases.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Roles.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Roles.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Suspects.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Suspects.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2021_05_01_075602_create_cases_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_05_01_075602_create_cases_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2021_05_01_080305_create_suspects_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_05_01_080305_create_suspects_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2021_05_01_080354_create_roles_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_05_01_080354_create_roles_table.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -171,7 +175,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1619854397999</updated>
-      <workItem from="1619854399887" duration="1678000" />
+      <workItem from="1619854399887" duration="3960000" />
     </task>
     <task id="LOCAL-00001" summary="Bootstrap initialization">
       <created>1619854981682</created>
@@ -187,7 +191,14 @@
       <option name="project" value="LOCAL" />
       <updated>1619855945484</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Migrations">
+      <created>1619856316141</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1619856316141</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
