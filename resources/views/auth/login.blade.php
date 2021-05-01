@@ -4,7 +4,7 @@
 <div class="container-fluid login-page d-flex justify-content-center align-content-center">
     <div class="row justify-content-center align-content-center">
         <div class="col">
-            <div class="login-form container-fluid">
+            <div class="login-form p-5 container-fluid">
                 <div class="py-2 row justify-content-center align-content-center">
                     <div class="col d-flex justify-content-center align-content-center">
                         <img src="{{ url('/assets/images/logo.png') }}" alt="">
