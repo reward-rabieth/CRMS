@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateCasesModelsTable extends Migration
+class CreateSuspectsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,7 +13,7 @@ class CreateCasesModelsTable extends Migration
      */
     public function up()
     {
-        Schema::create('cases_models', function (Blueprint $table) {
+        Schema::create('suspects', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
         });
@@ -26,6 +26,6 @@ class CreateCasesModelsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('cases_models');
+        Schema::dropIfExists('suspects');
     }
 }
