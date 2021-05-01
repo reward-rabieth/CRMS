@@ -16,7 +16,7 @@
 
                         <div class="form-group justify-content-center align-items-center  row my-4">
                             <div class="col-md-9">
-                                <input id="email" type="text" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" placeholder="Login Id" required autofocus>
+                                <input id="username" type="text" class="form-control @error('username') is-invalid @enderror" name="username" value="{{ old('username') }}" placeholder="Login Id" required autofocus>
 
                                 @error('username')
                                 <span class="invalid-feedback" role="alert">
