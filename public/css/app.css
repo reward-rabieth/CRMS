@@ -1,0 +1,10 @@
+.login-form{
+    height: 400px;
+    width: 400px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.3);
+    margin: auto;
+}
+.login-page{
+    height: 100vh;
+}
+
