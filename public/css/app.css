@@ -10013,6 +10013,15 @@ h3 {
   height: 100vh;
 }
 
+a {
+  color: white;
+  text-decoration: none;
+}
+a:hover {
+  color: white;
+  text-decoration: none;
+}
+
 .side-bar {
   background: #112337;
   height: 100%;
@@ -10021,6 +10030,20 @@ h3 {
   left: 0;
   width: 215px;
   color: white;
+}
+.side-bar ul {
+  list-style: none;
+  padding: 0;
+}
+.side-bar ul li {
+  color: white;
+  margin-top: 10px;
+  padding: 10px 20px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+.side-bar ul li:hover {
+  background: #1c3758;
 }
 
 .main {
