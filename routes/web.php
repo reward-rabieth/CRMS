@@ -26,7 +26,7 @@ Route::prefix('admin')->group(function (){
 //    Stations routes
     Route::prefix('/station')->group(function (){
         Route::get('/add',function (){
-            echo "Testing";
+            return view('admin.stations.store');
         });
         Route::get('/view',function (){
             echo "Testing";

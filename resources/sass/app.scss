@@ -21,3 +21,15 @@
 //.btn{
 //    background: $dark-blue;
 //}
+.side-bar{
+    background: $dark-blue;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 215px;
+    color: white;
+}
+.main{
+    padding-left: 215px;
+}

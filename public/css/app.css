@@ -10012,3 +10012,17 @@ h3 {
 .login-page {
   height: 100vh;
 }
+
+.side-bar {
+  background: #112337;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 215px;
+  color: white;
+}
+
+.main {
+  padding-left: 215px;
+}

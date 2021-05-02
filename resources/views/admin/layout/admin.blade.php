@@ -1,10 +1,11 @@
 @extends('layouts.app')
 
 @section('content')
-    <nav class="nav">
-
-    </nav>
+    <div class="side-bar">
+{{--        Navigation bar--}}
+        s
+    </div>
     <main class="main">
-
+        @yield('admin')
     </main>
 @endsection
