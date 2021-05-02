@@ -36,20 +36,34 @@ a{
     left: 0;
     width: 215px;
     color: white;
-    ul{
-        list-style: none;
-        padding: 0;
-        li{
-            color: white;
-            margin-top: 10px;
-            padding: 10px 20px;
-            margin-bottom: 10px;
-            cursor: pointer;
-            &:hover{
-                background: $dark-blue-100;
-            }
+    .nav-item{
+        padding: 10px 20px;
+        cursor: pointer;
+        &:hover{
+            background: $dark-blue-100;
         }
     }
+    .category-wrapper{
+        .sub-category{
+            padding-left: 15px;
+        }
+    }
+     .sub-category{
+            list-style: none;
+            padding: 0;
+            margin-bottom: 0;
+            li{
+                color: white;
+                padding: 2px 20px;
+                cursor: pointer;
+                &:hover{
+                    background: $dark-blue-100;
+                }
+            }
+     }
+}
+.collapse{
+    display: none;
 }
 .main{
     padding-left: 215px;

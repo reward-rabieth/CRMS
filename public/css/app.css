@@ -10031,19 +10031,32 @@ a:hover {
   width: 215px;
   color: white;
 }
-.side-bar ul {
-  list-style: none;
-  padding: 0;
-}
-.side-bar ul li {
-  color: white;
-  margin-top: 10px;
+.side-bar .nav-item {
   padding: 10px 20px;
-  margin-bottom: 10px;
   cursor: pointer;
 }
-.side-bar ul li:hover {
+.side-bar .nav-item:hover {
   background: #1c3758;
+}
+.side-bar .category-wrapper .sub-category {
+  padding-left: 15px;
+}
+.side-bar .sub-category {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 0;
+}
+.side-bar .sub-category li {
+  color: white;
+  padding: 2px 20px;
+  cursor: pointer;
+}
+.side-bar .sub-category li:hover {
+  background: #1c3758;
+}
+
+.collapse {
+  display: none;
 }
 
 .main {

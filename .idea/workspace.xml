@@ -16,9 +16,9 @@
     <list default="true" id="637d2deb-9e0f-4924-89fd-4d6288848bd1" name="Default Changelist" comment="sidebar nav">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/sass/_variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/_variables.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/sass/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/app.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/admin/layout/admin.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/layout/admin.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -207,7 +207,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1619854397999</updated>
-      <workItem from="1619854399887" duration="20862000" />
+      <workItem from="1619854399887" duration="26080000" />
     </task>
     <task id="LOCAL-00001" summary="Bootstrap initialization">
       <created>1619854981682</created>
@@ -308,6 +308,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="847" y="371" key="#File_Watchers/557.1080.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1619945591772" />
+    <state x="586" y="218" key="#Inspections" timestamp="1619953946559">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="586" y="218" key="#Inspections/557.1080.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1619953946559" />
     <state x="690" y="286" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1619941303782">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -320,22 +324,22 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="627" y="317" key="EditFileWatcherDialog/557.1080.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1619945575536" />
-    <state width="1875" height="288" key="GridCell.Tab.0.bottom" timestamp="1619945767328">
+    <state width="1875" height="104" key="GridCell.Tab.0.bottom" timestamp="1619948207990">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1875" height="288" key="GridCell.Tab.0.bottom/557.1080.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1619945767328" />
-    <state width="1875" height="288" key="GridCell.Tab.0.center" timestamp="1619945767328">
+    <state width="1875" height="104" key="GridCell.Tab.0.bottom/557.1080.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1619948207990" />
+    <state width="1875" height="104" key="GridCell.Tab.0.center" timestamp="1619948207990">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1875" height="288" key="GridCell.Tab.0.center/557.1080.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1619945767328" />
-    <state width="1875" height="288" key="GridCell.Tab.0.left" timestamp="1619945767328">
+    <state width="1875" height="104" key="GridCell.Tab.0.center/557.1080.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1619948207990" />
+    <state width="1875" height="104" key="GridCell.Tab.0.left" timestamp="1619948207990">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1875" height="288" key="GridCell.Tab.0.left/557.1080.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1619945767328" />
-    <state width="1875" height="288" key="GridCell.Tab.0.right" timestamp="1619945767328">
+    <state width="1875" height="104" key="GridCell.Tab.0.left/557.1080.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1619948207990" />
+    <state width="1875" height="104" key="GridCell.Tab.0.right" timestamp="1619948207990">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1875" height="288" key="GridCell.Tab.0.right/557.1080.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1619945767328" />
+    <state width="1875" height="104" key="GridCell.Tab.0.right/557.1080.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1619948207990" />
     <state x="807" y="176" key="RollbackChangesDialog" timestamp="1619944817849">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -352,9 +356,9 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="615" y="250" key="run.anything.popup/557.1080.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1619944654668" />
-    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup" timestamp="1619946518657">
+    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup" timestamp="1619953410356">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup/557.1080.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1619946518657" />
+    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup/557.1080.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1619953410356" />
   </component>
 </project>
