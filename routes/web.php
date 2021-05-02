@@ -1,5 +1,6 @@
 <?php
 
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -20,3 +21,51 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Route::prefix('admin')->group(function (){
+//    Stations routes
+    Route::prefix('/station')->group(function (){
+        Route::get('/add',function (){
+            echo "Testing";
+        });
+        Route::get('/view',function (){
+            echo "Testing";
+        });
+    });
+//    Crimes routes
+    Route::prefix('/crimes')->group(function (){
+        Route::get('/add',function (){
+            echo "Testing";
+        });
+        Route::get('/view',function (){
+            echo "Testing";
+        });
+    });
+//    Police routes
+    Route::prefix('/police')->group(function (){
+        Route::get('/add',function (){
+            echo "Testing";
+        });
+        Route::get('/view',function (){
+            echo "Testing";
+        });
+    });
+//    Criminals routes
+    Route::prefix('/criminals')->group(function (){
+        Route::get('/add',function (){
+            echo "Testing";
+        });
+        Route::get('/view',function (){
+            echo "Testing";
+        });
+    });
+//    Case routes
+    Route::prefix('/case')->group(function (){
+        Route::get('/add',function (){
+            echo "Testing";
+        });
+        Route::get('/view',function (){
+            echo "Testing";
+        });
+    });
+});
