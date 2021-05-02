@@ -14,8 +14,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="637d2deb-9e0f-4924-89fd-4d6288848bd1" name="Default Changelist" comment="sidebar nav">
+      <change afterPath="$PROJECT_DIR$/app/Http/Middleware/AG.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Middleware/HOS.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Middleware/RCO.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Middleware/investigator.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Middleware/police.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2021_05_02_135127_create_role_user_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/police/store.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/ag/layout/ag.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/hos/layout/hos.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/investigator/layout/investigator.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/police/layout/police.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/layout/admin.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/layout/admin.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Kernel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeders/RoleUserSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/RoleUserSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -153,11 +167,18 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js.last.introduce.type" value="LET" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/admin/police" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Projects\final_year\cims\resources\views\admin\police" />
+      <recent name="D:\Projects\final_year\cims\resources\views\police\layout" />
+      <recent name="D:\Projects\final_year\cims\resources\views\investigator\layout" />
+      <recent name="D:\Projects\final_year\cims\resources\views\hos\layout" />
+      <recent name="D:\Projects\final_year\cims\resources\views\ag\layout" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Projects\final_year\cims\resources\views\admin" />
       <recent name="D:\Projects\final_year\cims\resources\views\admin\stations" />
@@ -205,7 +226,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1619854397999</updated>
-      <workItem from="1619854399887" duration="29223000" />
+      <workItem from="1619854399887" duration="36477000" />
     </task>
     <task id="LOCAL-00001" summary="Bootstrap initialization">
       <created>1619854981682</created>
@@ -310,6 +331,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="586" y="218" key="#Inspections/557.1080.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1619953946559" />
+    <state x="715" y="80" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1619962349998">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="715" y="80" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/557.1080.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1619962349998" />
     <state x="690" y="286" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1619941303782">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -346,17 +371,17 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="552" y="268" key="Vcs.Push.Dialog.v2/557.1080.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1619858585347" />
-    <state x="777" y="449" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1619870407631">
+    <state x="777" y="449" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1619963551797">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="777" y="449" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/557.1080.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1619870407631" />
+    <state x="777" y="449" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/557.1080.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1619963551797" />
     <state x="615" y="250" key="run.anything.popup" timestamp="1619944654668">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="615" y="250" key="run.anything.popup/557.1080.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1619944654668" />
-    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup" timestamp="1619953410356">
+    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup" timestamp="1619967944340">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup/557.1080.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1619953410356" />
+    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup/557.1080.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1619967944340" />
   </component>
 </project>
