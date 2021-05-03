@@ -10,8 +10,8 @@
 {{--                <ion-icon name="chevron-down-outline" class="chevron"></ion-icon>--}}
             </div>
             <ul class="sub-category">
-                <li><a href="{{ route("admin.station.create") }}"><ion-icon class="mr-2" name="add-outline"></ion-icon> Add</a></li>
-                <li><a href="{{ route("admin.station.index") }}"><ion-icon class="mr-2" name="eye-outline"></ion-icon> View</a></li>
+                <a href="{{ route("admin.station.create") }}"><li><ion-icon class="mr-2" name="add-outline"></ion-icon> Add</li></a>
+                <a href="{{ route("admin.station.index") }}"><li><ion-icon class="mr-2" name="eye-outline"></ion-icon> View</li></a>
             </ul>
         </div>
         <a href="{{ route("admin.crimes.add") }}"><div class="nav-item"><ion-icon class="mr-2" name="eye-outline"></ion-icon> MANAGE CRIMES</div></a>

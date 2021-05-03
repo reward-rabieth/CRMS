@@ -100,11 +100,16 @@ class StationsController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  int  $id
-     * @return Response
+     * @param int $id
+     * @return RedirectResponse
      */
-    public function destroy($id)
+    public function destroy(int $id)
     {
         //
+        $res=Stations::where('id',$id)->delete();
+
+
+        return $res;
+
     }
 }
