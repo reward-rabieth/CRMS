@@ -35,9 +35,8 @@ Route::prefix('admin')->group(function (){
             Route::post('',[StationsController::class,'store'])
                 ->name("admin.station.store");
 
-            Route::get('/view',function (){
-                echo "Testing";
-            })->name("admin.station.view");
+            Route::get('/stations',[StationsController::class,'index'])
+                ->name("admin.station.index");
 
         });
 

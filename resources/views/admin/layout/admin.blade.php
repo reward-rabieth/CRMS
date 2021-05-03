@@ -11,7 +11,7 @@
             </div>
             <ul class="sub-category">
                 <li><a href="{{ route("admin.station.create") }}"><ion-icon class="mr-2" name="add-outline"></ion-icon> Add</a></li>
-                <li><a href="{{ route("admin.station.view") }}"><ion-icon class="mr-2" name="eye-outline"></ion-icon> View</a></li>
+                <li><a href="{{ route("admin.station.index") }}"><ion-icon class="mr-2" name="eye-outline"></ion-icon> View</a></li>
             </ul>
         </div>
         <a href="{{ route("admin.crimes.add") }}"><div class="nav-item"><ion-icon class="mr-2" name="eye-outline"></ion-icon> MANAGE CRIMES</div></a>

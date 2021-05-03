@@ -23,7 +23,9 @@ class StationsController extends Controller
     public function index()
     {
         //
-        return view('admin.stations.store');
+        return view('admin.stations.index',[
+            'stations'=>Stations::all()
+        ]);
     }
 
     /**

@@ -14,10 +14,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="637d2deb-9e0f-4924-89fd-4d6288848bd1" name="Default Changelist" comment="sidebar nav">
-      <change afterPath="$PROJECT_DIR$/app/Models/Stations.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2021_05_03_120626_create_stations_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/stations/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/StationsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/StationsController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/layout/admin.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/layout/admin.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -215,7 +216,7 @@
       <option name="presentableId" value="Default" />
       <updated>1619854397999</updated>
       <workItem from="1619854399887" duration="37072000" />
-      <workItem from="1620036346424" duration="7118000" />
+      <workItem from="1620036346424" duration="9606000" />
     </task>
     <task id="LOCAL-00001" summary="Bootstrap initialization">
       <created>1619854981682</created>
@@ -361,10 +362,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="552" y="268" key="Vcs.Push.Dialog.v2/557.1080.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1619858585347" />
-    <state x="777" y="449" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1620044033953">
+    <state x="777" y="449" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1620045631041">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="777" y="449" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/557.1080.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1620044033953" />
+    <state x="777" y="449" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/557.1080.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1620045631041" />
     <state x="615" y="250" key="run.anything.popup" timestamp="1619944654668">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
