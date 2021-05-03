@@ -14,21 +14,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="637d2deb-9e0f-4924-89fd-4d6288848bd1" name="Default Changelist" comment="sidebar nav">
-      <change afterPath="$PROJECT_DIR$/app/Http/Middleware/AG.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Middleware/HOS.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Middleware/RCO.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Middleware/investigator.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Middleware/police.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2021_05_02_135127_create_role_user_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/police/store.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/ag/layout/ag.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/hos/layout/hos.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/investigator/layout/investigator.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/police/layout/police.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Kernel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeders/RoleUserSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/RoleUserSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/layout/admin.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/layout/admin.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/stations/store.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/stations/store.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -36,7 +24,7 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
   </component>
@@ -186,7 +174,7 @@
       <recent name="D:\Projects\final_year\cims\public\assets" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="npm.dev">
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
       <TestRunner scope="XML" />
       <method v="2" />
@@ -226,7 +214,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1619854397999</updated>
-      <workItem from="1619854399887" duration="36477000" />
+      <workItem from="1619854399887" duration="37072000" />
+      <workItem from="1620036346424" duration="1882000" />
     </task>
     <task id="LOCAL-00001" summary="Bootstrap initialization">
       <created>1619854981682</created>
@@ -307,6 +296,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
@@ -347,22 +337,22 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="627" y="317" key="EditFileWatcherDialog/557.1080.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1619945575536" />
-    <state width="1875" height="104" key="GridCell.Tab.0.bottom" timestamp="1619948207990">
+    <state width="1875" height="288" key="GridCell.Tab.0.bottom" timestamp="1619976305707">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1875" height="104" key="GridCell.Tab.0.bottom/557.1080.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1619948207990" />
-    <state width="1875" height="104" key="GridCell.Tab.0.center" timestamp="1619948207990">
+    <state width="1875" height="288" key="GridCell.Tab.0.bottom/557.1080.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1619976305707" />
+    <state width="1875" height="288" key="GridCell.Tab.0.center" timestamp="1619976305707">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1875" height="104" key="GridCell.Tab.0.center/557.1080.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1619948207990" />
-    <state width="1875" height="104" key="GridCell.Tab.0.left" timestamp="1619948207990">
+    <state width="1875" height="288" key="GridCell.Tab.0.center/557.1080.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1619976305707" />
+    <state width="1875" height="288" key="GridCell.Tab.0.left" timestamp="1619976305706">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1875" height="104" key="GridCell.Tab.0.left/557.1080.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1619948207990" />
-    <state width="1875" height="104" key="GridCell.Tab.0.right" timestamp="1619948207990">
+    <state width="1875" height="288" key="GridCell.Tab.0.left/557.1080.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1619976305706" />
+    <state width="1875" height="288" key="GridCell.Tab.0.right" timestamp="1619976305707">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1875" height="104" key="GridCell.Tab.0.right/557.1080.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1619948207990" />
+    <state width="1875" height="288" key="GridCell.Tab.0.right/557.1080.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1619976305707" />
     <state x="807" y="176" key="RollbackChangesDialog" timestamp="1619944817849">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>

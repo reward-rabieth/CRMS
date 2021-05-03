@@ -10,17 +10,28 @@
 {{--                <ion-icon name="chevron-down-outline" class="chevron"></ion-icon>--}}
             </div>
             <ul class="sub-category">
-                <li><a href=""><ion-icon class="mr-2" name="add-outline"></ion-icon> Add</a></li>
-                <li><a href=""><ion-icon class="mr-2" name="eye-outline"></ion-icon> View</a></li>
+                <li><a href="{{ route("admin.station.add") }}"><ion-icon class="mr-2" name="add-outline"></ion-icon> Add</a></li>
+                <li><a href="{{ route("admin.station.view") }}"><ion-icon class="mr-2" name="eye-outline"></ion-icon> View</a></li>
             </ul>
         </div>
-        <a href=""><div class="nav-item"><ion-icon class="mr-2" name="eye-outline"></ion-icon> MANAGE CRIMES</div></a>
-        <a href=""><div class="nav-item"><ion-icon class="mr-2" name="people-outline"></ion-icon> MANAGE POLICE</div></a>
-        <a href=""><div class="nav-item"><ion-icon class="mr-2" name="file-tray-stacked-outline"></ion-icon> MANAGE CASES</div></a>
-        <a href=""><div class="nav-item"><ion-icon class="mr-2" name="exit-outline"></ion-icon> LOG OUT</div></a>
+        <a href="{{ route("admin.crimes.add") }}"><div class="nav-item"><ion-icon class="mr-2" name="eye-outline"></ion-icon> MANAGE CRIMES</div></a>
+        <a href="{{ route("admin.police.add") }}"><div class="nav-item"><ion-icon class="mr-2" name="people-outline"></ion-icon> MANAGE POLICE</div></a>
+        <a href="{{ route("admin.case.add") }}"><div class="nav-item"><ion-icon class="mr-2" name="file-tray-stacked-outline"></ion-icon> MANAGE CASES</div></a>
+        <a href="{{ route("logout") }}" onclick="event.preventDefault();
+                        document.getElementById('logout-form').submit();">
+            <div class="nav-item">
+                <ion-icon class="mr-2" name="exit-outline"></ion-icon>
+                LOG OUT
+            </div>
+            <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                @csrf
+            </form>
+        </a>
     </div>
-    <main class="main">
-        @yield('admin')
+    <main class="main container-fluid">
+        <div class="p-2">
+            @yield('admin')
+        </div>
     </main>
 
     <script>
