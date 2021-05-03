@@ -2,11 +2,15 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Stations;
 use Illuminate\Contracts\Foundation\Application;
 use Illuminate\Contracts\View\Factory;
 use Illuminate\Contracts\View\View;
+use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
+use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Redirect;
 use Illuminate\Support\Facades\Validator;
 
 class StationsController extends Controller
@@ -30,14 +34,14 @@ class StationsController extends Controller
     public function create()
     {
         //
-        return view('admin.stations.store');
+        return view('admin.stations.create');
     }
 
     /**
      * Store a newly created resource in storage.
      *
      * @param Request $request
-     * @return Response
+     * @return RedirectResponse
      */
     public function store(Request $request)
     {
@@ -49,6 +53,12 @@ class StationsController extends Controller
         ]);
 
          //Store input to database
+        DB::table('stations')->insert([
+            'name'=>$request->input('name'),
+            'code'=>$request->input('code'),
+            'district'=>$request->input('district')
+        ]);
+        return Redirect::route('admin.station.create')->with('status', 'Station created!');
     }
 
     /**

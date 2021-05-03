@@ -7,6 +7,7 @@
         <hr>
     </div>
     <div class="card mx-4 my-4">
+
         <div class="card-body px-4">
             <h4>Station details</h4>
             <form class="my-4" method="POST" action="{{ route('admin.station.store') }}">
@@ -32,6 +33,12 @@
                     <div class="alert alert-danger">{{ $message }}</div>
                     @enderror
                 </div>
+
+                @if (session('status'))
+                    <div class="alert alert-success my-2">
+                        {{ session('status') }}
+                    </div>
+                @endif
                 <button type="submit" class="btn btn-primary">Submit</button>
             </form>
         </div>
