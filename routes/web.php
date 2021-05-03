@@ -65,6 +65,10 @@ Route::prefix('admin')->group(function (){
 
             Route::get('',[PoliceController::class,'index'])
                 ->name("admin.police.index");
+
+            Route::delete('/{id}',[StationsController::class,'destroy'])
+                ->name("admin.police.destroy");
+
         });
 
 //    Criminals routes

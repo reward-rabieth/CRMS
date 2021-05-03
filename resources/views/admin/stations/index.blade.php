@@ -8,7 +8,7 @@
                 {{ session('status') }}
             </div>
         @endif
-        <table class="table">
+        <table class="table table-striped table-hover">
             <thead class="bg-primary text-white">
             <tr>
                 <th scope="col">#</th>
@@ -21,7 +21,7 @@
             <tbody>
 
             @foreach($stations as $station)
-                <tr>
+                <tr class="table-light">
                     <th scope="row">{{ $loop->index+1 }}</th>
                     <td>{{ $station->name }}</td>
                     <td>{{ $station->code }}</td>
