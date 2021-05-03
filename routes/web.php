@@ -29,15 +29,16 @@ Route::prefix('admin')->group(function (){
 //    Stations routes
         Route::prefix('/station')->group(function (){
 
-            Route::get('/create',[StationsController::class,'index'])
-                ->name("admin.station.index");
+            Route::get('/create',[StationsController::class,'create'])
+                ->name("admin.station.create");
 
-            Route::post('/create',[StationsController::class])
-                ->name("admin.station.add");
+            Route::post('',[StationsController::class,'store'])
+                ->name("admin.station.store");
 
             Route::get('/view',function (){
                 echo "Testing";
             })->name("admin.station.view");
+
         });
 
 //    Crimes routes

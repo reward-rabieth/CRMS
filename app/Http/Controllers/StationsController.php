@@ -7,6 +7,7 @@ use Illuminate\Contracts\View\Factory;
 use Illuminate\Contracts\View\View;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
+use Illuminate\Support\Facades\Validator;
 
 class StationsController extends Controller
 {
@@ -24,22 +25,30 @@ class StationsController extends Controller
     /**
      * Show the form for creating a new resource.
      *
-     * @return Response
+     * @return Application|Factory|View|Response
      */
     public function create()
     {
         //
+        return view('admin.stations.store');
     }
 
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
+     * @param Request $request
      * @return Response
      */
     public function store(Request $request)
     {
-        //
+        //Validate input
+        $request->validate([
+            'name' => 'required|max:255',
+            'code' => 'required|Integer',
+            'district' => 'required',
+        ]);
+
+         //Store input to database
     }
 
     /**
@@ -67,7 +76,7 @@ class StationsController extends Controller
     /**
      * Update the specified resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
+     * @param Request $request
      * @param  int  $id
      * @return Response
      */
