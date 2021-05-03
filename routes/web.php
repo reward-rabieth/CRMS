@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\PoliceController;
 use App\Http\Controllers\StationsController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
@@ -55,17 +56,20 @@ Route::prefix('admin')->group(function (){
 
 //    Police routes
         Route::prefix('/police')->group(function (){
-            Route::get('/add',function (){
-                echo "Testing";
-            })->name("admin.police.add");
-            Route::get('/view',function (){
-                echo "Testing";
-            })->name("admin.crimes.view");
+
+            Route::get('/create',[PoliceController::class,'create'])
+                ->name("admin.police.create");
+
+            Route::post('/store',[PoliceController::class,'store'])
+                ->name("admin.police.store");
+
+            Route::get('',[PoliceController::class,'index'])
+                ->name("admin.police.index");
         });
 
 //    Criminals routes
         Route::prefix('/criminals')->group(function (){
-            Route::get('/add',function (){
+            Route::get('/create',function (){
                 echo "Testing";
             })->name("admin.criminals.add");
             Route::get('/view',function (){

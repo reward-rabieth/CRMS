@@ -2,7 +2,6 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Stations;
 use Illuminate\Contracts\Foundation\Application;
 use Illuminate\Contracts\View\Factory;
 use Illuminate\Contracts\View\View;
@@ -10,10 +9,10 @@ use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Redirect;
-use Illuminate\Support\Facades\Validator;
 
-class StationsController extends Controller
+class PoliceController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -23,9 +22,7 @@ class StationsController extends Controller
     public function index()
     {
         //
-        return view('admin.stations.index',[
-            'stations'=>Stations::all()
-        ]);
+        return view('admin.police.index');
     }
 
     /**
@@ -36,7 +33,7 @@ class StationsController extends Controller
     public function create()
     {
         //
-        return view('admin.stations.create');
+        return view('admin.police.create');
     }
 
     /**
@@ -47,20 +44,35 @@ class StationsController extends Controller
      */
     public function store(Request $request)
     {
-        //Validate input
+        // Validate input
         $request->validate([
             'name' => 'required|max:255',
-            'code' => 'required|Integer',
-            'district' => 'required',
+            'policeId' => 'unique:users,username|required|String',
+            'gender' => 'required|String',
+            'age' => 'required|Integer'
         ]);
 
-         //Store input to database
-        DB::table('stations')->insert([
-            'name'=>$request->input('name'),
-            'code'=>$request->input('code'),
-            'district'=>$request->input('district')
+        // Generate password Hash
+        $username = $request->input('policeId');
+        $pwd = Hash::make($username);
+
+        // Store new user
+        $id = DB::table('users')->insertGetId([
+            'name' => $request->input('name'),
+            'username' => $username,
+            'password' => $pwd,
+            'gender' => $request->input('gender'),
+            'age' => $request->input('age')
         ]);
-        return Redirect::route('admin.station.create')->with('status', 'Station created!');
+
+        // Assign police role to the user
+        DB::table('role_user')->insert([
+            'role_id'=>5,
+            'user_id'=>$id
+        ]);
+
+        return Redirect::route('admin.police.create')->with('status', 'Police created!');
+
     }
 
     /**
@@ -100,15 +112,11 @@ class StationsController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param int $id
-     * @return RedirectResponse
+     * @param  int  $id
+     * @return Response
      */
-    public function destroy(int $id)
+    public function destroy($id)
     {
         //
-        $res=Stations::where('id',$id)->delete();
-
-        return $res;
-
     }
 }
