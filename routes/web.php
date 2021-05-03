@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\StationsController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
@@ -24,15 +25,21 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 
 Route::prefix('admin')->group(function (){
     Route::group(['middleware'=> 'auth.rco'],function (){
-        //    Stations routes
+
+//    Stations routes
         Route::prefix('/station')->group(function (){
-            Route::get('/add',function (){
-                return view('admin.stations.store');
-            })->name("admin.station.add");
+
+            Route::get('/create',[StationsController::class,'index'])
+                ->name("admin.station.index");
+
+            Route::post('/create',[StationsController::class])
+                ->name("admin.station.add");
+
             Route::get('/view',function (){
                 echo "Testing";
             })->name("admin.station.view");
         });
+
 //    Crimes routes
         Route::prefix('/crimes')->group(function (){
             Route::get('/add',function (){
@@ -42,6 +49,7 @@ Route::prefix('admin')->group(function (){
                 echo "Testing";
             })->name("admin.crimes.view");
         });
+
 //    Police routes
         Route::prefix('/police')->group(function (){
             Route::get('/add',function (){
@@ -51,6 +59,7 @@ Route::prefix('admin')->group(function (){
                 echo "Testing";
             })->name("admin.crimes.view");
         });
+
 //    Criminals routes
         Route::prefix('/criminals')->group(function (){
             Route::get('/add',function (){
@@ -60,6 +69,7 @@ Route::prefix('admin')->group(function (){
                 echo "Testing";
             })->name("admin.criminals.add");
         });
+
 //    Case routes
         Route::prefix('/case')->group(function (){
             Route::get('/add',function (){

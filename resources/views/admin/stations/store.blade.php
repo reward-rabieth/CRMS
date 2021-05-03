@@ -9,10 +9,11 @@
     <div class="card mx-4 my-4">
         <div class="card-body px-4">
             <h4>Station details</h4>
-            <form class="my-4">
+            <form class="my-4" method="POST" action="{{ route('login') }}">
+                @csrf
                 <div class="form-group">
                     <label for="stationName">Station Name</label>
-                    <input type="text" class="form-control" id="stationName" aria-describedby="textHelp" placeholder="Enter name">
+                    <input type="text" class="form-control" id="stationName" aria-describedby="textHelp" placeholder="Enter name" autocomplete="false">
                 </div>
                 <div class="form-group">
                     <label for="stationCode">Station code</label>

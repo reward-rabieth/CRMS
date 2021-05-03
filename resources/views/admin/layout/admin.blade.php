@@ -10,7 +10,7 @@
 {{--                <ion-icon name="chevron-down-outline" class="chevron"></ion-icon>--}}
             </div>
             <ul class="sub-category">
-                <li><a href="{{ route("admin.station.add") }}"><ion-icon class="mr-2" name="add-outline"></ion-icon> Add</a></li>
+                <li><a href="{{ route("admin.station.index") }}"><ion-icon class="mr-2" name="add-outline"></ion-icon> Add</a></li>
                 <li><a href="{{ route("admin.station.view") }}"><ion-icon class="mr-2" name="eye-outline"></ion-icon> View</a></li>
             </ul>
         </div>
