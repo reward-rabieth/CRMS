@@ -112,13 +112,13 @@ Route::prefix('police')->group(function (){
             Route::get('/all',[ReportController::class,'index'])
                 ->name("police.report.index");
 
-          /*  // police/case/create
+            // police/case/create
             Route::post('',[ReportController::class,'store'])
-                ->name("admin.station.store");
+                ->name("police.report.store");
 
             // police/case/create
             Route::delete('/{id}',[ReportController::class,'destroy'])
-                ->name("admin.station.destroy");*/
+                ->name("admin.station.destroy");
 
         });
 

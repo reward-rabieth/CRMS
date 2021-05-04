@@ -14,20 +14,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="637d2deb-9e0f-4924-89fd-4d6288848bd1" name="Default Changelist" comment="sidebar nav">
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/CaseController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/ReportController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/police/reports/create.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/police/reports/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Models/Complaints.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2021_05_04_092544_create_complaints_table.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Kernel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/AG.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/AG.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/HOS.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/HOS.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/investigator.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/investigator.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/police.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/police.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/layout/admin.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/layout/admin.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/police/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/police/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/police/layout/police.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/police/layout/police.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ReportController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ReportController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/police/reports/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/police/reports/create.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -234,7 +226,7 @@
       <updated>1619854397999</updated>
       <workItem from="1619854399887" duration="37072000" />
       <workItem from="1620036346424" duration="21181000" />
-      <workItem from="1620111351917" duration="7048000" />
+      <workItem from="1620111351917" duration="10275000" />
     </task>
     <task id="LOCAL-00001" summary="Bootstrap initialization">
       <created>1619854981682</created>
@@ -352,10 +344,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="690" y="286" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/557.1080.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1619941303782" />
-    <state x="690" y="294" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1620119703719">
+    <state x="690" y="294" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1620122528122">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="690" y="294" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/557.1080.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1620119703719" />
+    <state x="690" y="294" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/557.1080.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1620122528122" />
     <state x="627" y="317" key="EditFileWatcherDialog" timestamp="1619945575536">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -396,9 +388,9 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="615" y="250" key="run.anything.popup/557.1080.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1620116929570" />
-    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup" timestamp="1620119683495">
+    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup" timestamp="1620119913322">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup/557.1080.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1620119683495" />
+    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup/557.1080.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1620119913322" />
   </component>
 </project>
