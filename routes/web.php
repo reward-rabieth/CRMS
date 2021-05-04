@@ -1,6 +1,8 @@
 <?php
 
+use App\Http\Controllers\CaseController;
 use App\Http\Controllers\PoliceController;
+use App\Http\Controllers\ReportController;
 use App\Http\Controllers\StationsController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
@@ -16,13 +18,13 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+//Route::get('/', function () {
+//    return view('welcome');
+//});
 
 Auth::routes();
-
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+/*
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');*/
 
 Route::prefix('admin')->group(function (){
     Route::group(['middleware'=> 'auth.rco'],function (){
@@ -90,5 +92,35 @@ Route::prefix('admin')->group(function (){
                 echo "Testing";
             })->name("admin.case.add");
         });
+    });
+});
+
+
+//  police/case
+Route::prefix('police')->group(function (){
+
+    Route::group(['middleware'=> 'auth.police'],function (){
+
+//    Report routes
+        Route::prefix('/report')->group(function (){
+
+            // police/case/create
+            Route::get('/create',[ReportController::class,'create'])
+                ->name("police.report.create");
+
+            // police/case/create
+            Route::get('/all',[ReportController::class,'index'])
+                ->name("police.report.index");
+
+          /*  // police/case/create
+            Route::post('',[ReportController::class,'store'])
+                ->name("admin.station.store");
+
+            // police/case/create
+            Route::delete('/{id}',[ReportController::class,'destroy'])
+                ->name("admin.station.destroy");*/
+
+        });
+
     });
 });

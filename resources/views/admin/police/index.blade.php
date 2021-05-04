@@ -2,7 +2,7 @@
 
 @section('admin')
     <div class="container-fluid">
-        <h4>All polices</h4>
+        <h4>All police</h4>
         @if (session('status'))
             <div class="alert alert-success my-2">
                 {{ session('status') }}

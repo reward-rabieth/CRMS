@@ -4,6 +4,8 @@ namespace App\Http\Middleware;
 
 use Closure;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\DB;
 
 class police
 {
@@ -16,6 +18,26 @@ class police
      */
     public function handle(Request $request, Closure $next)
     {
-        return $next($request);
+        if (!Auth::check()) {
+            return redirect()->route('login');
+        }
+
+        $roles = Auth::user()->roles()->get();
+
+        $collection = DB::table('users')
+            ->join('role_user', 'role_user.user_id', '=', 'users.id')
+            ->join('roles', 'role_user.role_id', '=', 'roles.id')
+            ->where('users.id', '=', \auth()->id())
+            ->select('roles.role')
+            ->get();
+
+        $json_decode = json_decode($collection, true);
+
+//            print ($role["role"]);
+            if ($json_decode[0]['role'] == "POLICE") {
+                return $next($request);
+            }
+
+        abort(403);
     }
 }

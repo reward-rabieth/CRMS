@@ -2,6 +2,10 @@
 
 namespace App\Http;
 
+use App\Http\Middleware\AG;
+use App\Http\Middleware\HOS;
+use App\Http\Middleware\investigator;
+use App\Http\Middleware\police;
 use App\Http\Middleware\RCO;
 use Illuminate\Foundation\Http\Kernel as HttpKernel;
 
@@ -57,6 +61,10 @@ class Kernel extends HttpKernel
         'auth' => \App\Http\Middleware\Authenticate::class,
         'auth.basic' => \Illuminate\Auth\Middleware\AuthenticateWithBasicAuth::class,
         'auth.rco' => RCO::class,
+        'auth.police' => police::class,
+        'auth.hos' => HOS::class,
+        'auth.investigator' => investigator::class,
+        'auth.ag' => AG::class,
         'cache.headers' => \Illuminate\Http\Middleware\SetCacheHeaders::class,
         'can' => \Illuminate\Auth\Middleware\Authorize::class,
         'guest' => \App\Http\Middleware\RedirectIfAuthenticated::class,
