@@ -9,6 +9,7 @@
 
         <div class="card-body px-4">
             <h5 class="font-weight-bold">Police details </h5>
+
             <form class="my-4" method="POST" action="{{ route('police.report.store') }}">
                 @csrf
                 <div class="form-group">
@@ -112,7 +113,6 @@
                     </div>
                 </div>
 
-
                 <div class="row g-3">
                     <div class="col">
                         <div class="form-group">
@@ -133,8 +133,6 @@
                         </div>
                     </div>
                 </div>
-
-
 
                 <div class="mb-3">
                     <label for="report" class="form-label">Report</label>

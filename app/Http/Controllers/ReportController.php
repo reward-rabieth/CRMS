@@ -71,6 +71,7 @@ class ReportController extends Controller
             'report' => $request->input('report'),
             'police_id' => auth()->id(),
         ]);
+
         return Redirect::route('police.report.create')->with('status', 'Report created!');
 
     }
@@ -107,6 +108,8 @@ class ReportController extends Controller
     public function update(Request $request, $id)
     {
         //
+        echo $request->input('investigator');
+        echo $id;
     }
 
     /**

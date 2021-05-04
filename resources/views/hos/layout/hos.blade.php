@@ -2,41 +2,47 @@
 
 @section('content')
     <div class="side-bar pt-5">
-{{--        Navigation bar--}}
+        {{--        Navigation bar--}}
         <div class="category-wrapper">
             <div class="nav-item collapse-link d-flex align-items-center justify-content-start" >
                 <ion-icon class="mr-2" name="home-outline"></ion-icon>
                 <span>MANAGE STATIONS</span>
-{{--                <ion-icon name="chevron-down-outline" class="chevron"></ion-icon>--}}
+                {{--                <ion-icon name="chevron-down-outline" class="chevron"></ion-icon>--}}
             </div>
             <ul class="sub-category">
-                <li><a href=""><ion-icon class="mr-2" name="add-outline"></ion-icon> Add</a></li>
-                <li><a href=""><ion-icon class="mr-2" name="eye-outline"></ion-icon> View</a></li>
+                <a href="{{ route("admin.station.create") }}"><li><ion-icon class="mr-2" name="add-outline"></ion-icon> Add</li></a>
+                <a href="{{ route("admin.station.index") }}"><li><ion-icon class="mr-2" name="eye-outline"></ion-icon> View</li></a>
             </ul>
         </div>
-        <a href=""><div class="nav-item"><ion-icon class="mr-2" name="eye-outline"></ion-icon> MANAGE CRIMES</div></a>
-        <a href=""><div class="nav-item"><ion-icon class="mr-2" name="people-outline"></ion-icon> MANAGE POLICE</div></a>
-        <a href=""><div class="nav-item"><ion-icon class="mr-2" name="file-tray-stacked-outline"></ion-icon> MANAGE CASES</div></a>
-        <a href=""><div class="nav-item"><ion-icon class="mr-2" name="exit-outline"></ion-icon> LOG OUT</div></a>
+        <a href="{{ route("hos.report.index") }}"><div class="nav-item"><ion-icon class="mr-2" name="eye-outline"></ion-icon> VIEW COMPLAINTS</div></a>
+        <div class="category-wrapper">
+            <div class="nav-item collapse-link d-flex align-items-center justify-content-start" >
+                <ion-icon class="mr-2" name="people-outline"></ion-icon>
+                <span> MANAGE POLICE</span>
+                {{--                <ion-icon name="chevron-down-outline" class="chevron"></ion-icon>--}}
+            </div>
+            <ul class="sub-category">
+                <a href="{{ route("admin.police.create") }}"><li><ion-icon class="mr-2" name="add-outline"></ion-icon> Add</li></a>
+                <a href="{{ route("admin.police.index") }}"><li><ion-icon class="mr-2" name="eye-outline"></ion-icon> View</li></a>
+            </ul>
+        </div>
+        <a href="{{ route("admin.case.add") }}"><div class="nav-item"><ion-icon class="mr-2" name="file-tray-stacked-outline"></ion-icon> VIEW CASES</div></a>
+        <a href="{{ route("logout") }}" onclick="event.preventDefault();
+                        document.getElementById('logout-form').submit();">
+            <div class="nav-item">
+                <ion-icon class="mr-2" name="exit-outline"></ion-icon>
+                LOG OUT
+            </div>
+            <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                @csrf
+            </form>
+        </a>
     </div>
-    <main class="main">
-        @yield('admin')
+    <main class="main container-fluid">
+        <div class="p-2">
+            @yield('hos')
+        </div>
     </main>
 
-    <script>
-        const expand = function (event){
-            let ul = event.target.nextElementSibling;
-            ul.classList.toggle('collapse')
-        }
-        /*const list = document.querySelectorAll(".category-wrapper .nav-item");
-        Array.from(list).forEach(function (ev){
-            ev.addEventListener('click',function (e){
-                console.log("ev")
-                    if (e.target.className === 'chevron'){
-                        const  li = e.target.parentElement;
-                        li.nextElementSibling.classList.toggle('collapse');
-                    }
-                })
-        });*/
-    </script>
+
 @endsection

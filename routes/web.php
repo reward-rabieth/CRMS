@@ -4,6 +4,8 @@ use App\Http\Controllers\CaseController;
 use App\Http\Controllers\PoliceController;
 use App\Http\Controllers\ReportController;
 use App\Http\Controllers\StationsController;
+use App\Models\Complaints;
+use App\Models\Stations;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
@@ -26,6 +28,7 @@ Auth::routes();
 /*
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');*/
 
+// RCO
 Route::prefix('admin')->group(function (){
     Route::group(['middleware'=> 'auth.rco'],function (){
 
@@ -96,31 +99,58 @@ Route::prefix('admin')->group(function (){
 });
 
 
-//  police/case
+//  POLICE
 Route::prefix('police')->group(function (){
-
     Route::group(['middleware'=> 'auth.police'],function (){
-
-//    Report routes
         Route::prefix('/report')->group(function (){
 
-            // police/case/create
             Route::get('/create',[ReportController::class,'create'])
                 ->name("police.report.create");
 
-            // police/case/create
             Route::get('/all',[ReportController::class,'index'])
                 ->name("police.report.index");
 
-            // police/case/create
             Route::post('',[ReportController::class,'store'])
                 ->name("police.report.store");
 
-            // police/case/create
             Route::delete('/{id}',[ReportController::class,'destroy'])
                 ->name("admin.station.destroy");
-
         });
 
+    });
+});
+
+//  HEAD OF STATION
+Route::prefix('hos')->group(function (){
+
+    Route::group(['middleware'=> 'auth.hos'],function (){
+
+//    Report routes
+        Route::prefix('/report')->group(function (){
+//            Route::get('/create',[ReportController::class,'create'])
+//                ->name("police.report.create");
+
+            Route::get('/all',function () {
+                return view('hos.reports.index',[
+                    'complaints'=>Complaints::all()
+                ]);
+            })->name("hos.report.index");
+
+            Route::get('/{id}',function ($id) {
+                return view('hos.reports.show',[
+                    'complaint'=>Complaints::findOrFail($id)
+                ]);
+            })->name('hos.report.show');
+
+            Route::put('/{id}',[ReportController::class,'update'])
+                ->name('hos.report.put');
+
+//            Route::post('',[ReportController::class,'store'])
+//                ->name("police.report.store");
+
+            Route::delete('/{id}',[ReportController::class,'destroy'])
+                ->name("hos.report.destroy");
+
+        });
     });
 });

@@ -1,20 +1,19 @@
 <template>
     <div>
-        <button class="btn btn-outline-danger px-3 d-flex justify-content-around align-items-center"
-                @click="remove">
-            Delete
-            <ion-icon class="mx-2" size="small" name="trash-sharp"></ion-icon>
+        <button class="btn btn-outline-primary px-3 d-flex justify-content-around align-items-center"
+                @click="update">
+            Update
         </button>
     </div>
 </template>
 
 <script>
 export default {
-name: "DeleteButton",
+    name: "UpdateButton",
     props:['route','id'],
     methods:{
-        remove:function (){
-            axios.delete(`${this.route}`)
+        update:function (){
+            axios.put(`${this.route}`)
                 .then(() => {
                     location.reload();
                 })

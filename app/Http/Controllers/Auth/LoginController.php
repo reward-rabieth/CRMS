@@ -55,7 +55,7 @@ class LoginController extends Controller
                 return "/admin/station";
             }
             if ($json_decode[0]['role'] == "HOS") {
-                return "/admin/station";
+                return "/hos/report/all";
             }
             if ($json_decode[0]['role'] == "AG") {
                 return "/admin/station";
@@ -63,7 +63,6 @@ class LoginController extends Controller
             if ($json_decode[0]['role'] == "POLICE") {
                 return "/police/report/create";
             }
-
 
     }
 

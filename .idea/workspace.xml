@@ -14,11 +14,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="637d2deb-9e0f-4924-89fd-4d6288848bd1" name="Default Changelist" comment="sidebar nav">
-      <change afterPath="$PROJECT_DIR$/app/Models/Complaints.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2021_05_04_092544_create_complaints_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/components/UpdateButton.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/hos/reports/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/hos/reports/show.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ReportController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ReportController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/components/DeleteButton.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/DeleteButton.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/hos/layout/hos.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/hos/layout/hos.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/police/reports/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/police/reports/create.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
@@ -170,18 +175,19 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Projects\final_year\cims\resources\views\components" />
+      <recent name="D:\Projects\final_year\cims\resources\views\admin" />
+      <recent name="D:\Projects\final_year\cims\resources\views\admin\stations" />
+      <recent name="D:\Projects\final_year\cims\public" />
+      <recent name="D:\Projects\final_year\cims\public\assets" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Projects\final_year\cims\resources\views\admin\police" />
       <recent name="D:\Projects\final_year\cims\resources\views\police\layout" />
       <recent name="D:\Projects\final_year\cims\resources\views\investigator\layout" />
       <recent name="D:\Projects\final_year\cims\resources\views\hos\layout" />
       <recent name="D:\Projects\final_year\cims\resources\views\ag\layout" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\Projects\final_year\cims\resources\views\admin" />
-      <recent name="D:\Projects\final_year\cims\resources\views\admin\stations" />
-      <recent name="D:\Projects\final_year\cims\public" />
-      <recent name="D:\Projects\final_year\cims\public\assets" />
     </key>
   </component>
   <component name="RunManager" selected="npm.dev">
@@ -226,7 +232,7 @@
       <updated>1619854397999</updated>
       <workItem from="1619854399887" duration="37072000" />
       <workItem from="1620036346424" duration="21181000" />
-      <workItem from="1620111351917" duration="10275000" />
+      <workItem from="1620111351917" duration="24483000" />
     </task>
     <task id="LOCAL-00001" summary="Bootstrap initialization">
       <created>1619854981682</created>
@@ -344,30 +350,30 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="690" y="286" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/557.1080.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1619941303782" />
-    <state x="690" y="294" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1620122528122">
+    <state x="690" y="294" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1620125649220">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="690" y="294" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/557.1080.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1620122528122" />
+    <state x="690" y="294" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/557.1080.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1620125649220" />
     <state x="627" y="317" key="EditFileWatcherDialog" timestamp="1619945575536">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="627" y="317" key="EditFileWatcherDialog/557.1080.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1619945575536" />
-    <state width="1875" height="366" key="GridCell.Tab.0.bottom" timestamp="1620055840173">
+    <state width="1875" height="366" key="GridCell.Tab.0.bottom" timestamp="1620139618529">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1875" height="366" key="GridCell.Tab.0.bottom/557.1080.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1620055840173" />
-    <state width="1875" height="366" key="GridCell.Tab.0.center" timestamp="1620055840173">
+    <state width="1875" height="366" key="GridCell.Tab.0.bottom/557.1080.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1620139618529" />
+    <state width="1875" height="366" key="GridCell.Tab.0.center" timestamp="1620139618529">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1875" height="366" key="GridCell.Tab.0.center/557.1080.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1620055840173" />
-    <state width="1875" height="366" key="GridCell.Tab.0.left" timestamp="1620055840173">
+    <state width="1875" height="366" key="GridCell.Tab.0.center/557.1080.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1620139618529" />
+    <state width="1875" height="366" key="GridCell.Tab.0.left" timestamp="1620139618528">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1875" height="366" key="GridCell.Tab.0.left/557.1080.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1620055840173" />
-    <state width="1875" height="366" key="GridCell.Tab.0.right" timestamp="1620055840173">
+    <state width="1875" height="366" key="GridCell.Tab.0.left/557.1080.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1620139618528" />
+    <state width="1875" height="366" key="GridCell.Tab.0.right" timestamp="1620139618529">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1875" height="366" key="GridCell.Tab.0.right/557.1080.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1620055840173" />
+    <state width="1875" height="366" key="GridCell.Tab.0.right/557.1080.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1620139618529" />
     <state x="794" y="459" key="NewPhpFileDialog" timestamp="1620055666616">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -388,9 +394,9 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="615" y="250" key="run.anything.popup/557.1080.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1620116929570" />
-    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup" timestamp="1620119913322">
+    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup" timestamp="1620149357469">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup/557.1080.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1620119913322" />
+    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup/557.1080.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1620149357469" />
   </component>
 </project>
