@@ -103,7 +103,11 @@
                         ->get();
 
                 @endphp
-
+                @if (session('status'))
+                    <div class="alert alert-success my-2">
+                        {{ session('status') }}
+                    </div>
+                @endif
                 <div class="row mt-4">
                     <div class="col-4">
                         <span>Allocate Investigator:</span>

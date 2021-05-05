@@ -17,4 +17,8 @@ class Complaints extends Model
     public function police() {
         return $this->belongsTo(User::class);
     }
+
+    public function investigator() {
+        return $this->belongsTo(User::class);
+    }
 }

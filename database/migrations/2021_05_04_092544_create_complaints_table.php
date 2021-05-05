@@ -26,11 +26,13 @@ class CreateComplaintsTable extends Migration
             $table->string('defendantAddress');
             $table->string('defendantRelationship');
             $table->unsignedBigInteger('police_id');
+            $table->unsignedBigInteger('investigator_id')->nullable();
             $table->string('report',5000);
             $table->timestamp('created_at')->default(DB::raw('CURRENT_TIMESTAMP'));
             $table->timestamp('updated_at')->default(DB::raw('CURRENT_TIMESTAMP on update CURRENT_TIMESTAMP'));
 
             $table->index('police_id');
+            $table->index('investigator_id');
         });
     }
 

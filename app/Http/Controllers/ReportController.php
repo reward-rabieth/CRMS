@@ -103,13 +103,23 @@ class ReportController extends Controller
      *
      * @param Request $request
      * @param  int  $id
-     * @return Response
+     * @return RedirectResponse
      */
     public function update(Request $request, $id)
     {
-        //
-        echo $request->input('investigator');
-        echo $id;
+        //get investigator
+        $investigator = DB::table('users')
+            ->where('username', '=', $request->input('investigator'))
+            ->first();
+
+        $id1 = $investigator->id;
+
+        DB::table('complaints')
+            ->where('id', '=', $id)
+            ->update(['investigator_id' => $id1]);
+
+        return Redirect::route('hos.report.show',$id)->with('status', 'Investigator allocated!');
+
     }
 
     /**
