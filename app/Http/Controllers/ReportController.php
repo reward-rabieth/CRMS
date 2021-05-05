@@ -132,4 +132,59 @@ class ReportController extends Controller
     {
         //
     }
+
+    public function status(Request $request, $id) {
+        // Validate input
+        $request->validate([
+            'remarks' => 'required|max:500',
+        ]);
+
+        if ($request->input('status') == "approve"){
+//            Update report
+            DB::table('complaints')
+                ->where('id', '=', $id)
+                ->update([
+                    'status' => 'Approved',
+                    'remarks' => $request->input('remarks')
+                ]);
+
+            $report = DB::table('complaints')
+                        ->where('id', '=', $id)
+                        ->first();
+
+//            Create new case
+            DB::table('cases')
+                ->insert([
+                    'date' => date('Y/m/d'),
+                    'report_id' => $id,
+                    'remarks' => $request->input('remarks'),
+                    'suspectName' => $report->defendantName,
+                    'investigation_officer' => auth()->id()
+                ]);
+        }else{
+            DB::table('complaints')
+                ->where('id', '=', $id)
+                ->update([
+                    'status' => 'Denied',
+                    'remarks' => $request->input('remarks')
+                ]);
+        }
+        return Redirect::route('investigator.report.show',$id)->with('status', 'Complaint updated!');
+    }
+
+    public function approve($id) {
+        DB::table('complaints')
+            ->where('id', '=', $id)
+            ->update(['status' => 'Approved']);
+
+        return Redirect::route('investigator.report.show',$id)->with('status', 'Complaint Approved!');
+    }
+
+    public function deny($id) {
+        DB::table('complaints')
+            ->where('id', '=', $id)
+            ->update(['status' => 'Denied']);
+
+        return Redirect::route('investigator.report.show',$id)->with('status', 'Complaint denied!');
+    }
 }

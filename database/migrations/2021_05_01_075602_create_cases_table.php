@@ -16,14 +16,15 @@ class CreateCasesTable extends Migration
         Schema::create('cases', function (Blueprint $table) {
             $table->id("caseNumber");
             $table->timestamp("date");
-            $table->string("statement");
+            $table->string("statement")->default('Pending');
+            $table->unsignedBigInteger("report_id");
+            $table->string("suspectName");
             $table->string("remarks");
-            $table->string("sectionLaw");
-            $table->string("status");
-            $table->unsignedBigInteger('suspect_id');
+            $table->string("sectionLaw")->default('Pending');
+            $table->string("status")->default('Pending');
             $table->unsignedBigInteger('investigation_officer');
 
-            $table->index("suspect_id");
+            $table->index("report_id");
             $table->index("investigation_officer");
         });
     }

@@ -13,12 +13,19 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="637d2deb-9e0f-4924-89fd-4d6288848bd1" name="Default Changelist" comment="sidebar nav">
+    <list default="true" id="637d2deb-9e0f-4924-89fd-4d6288848bd1" name="Default Changelist" comment="Update investigator">
+      <change afterPath="$PROJECT_DIR$/resources/views/investigator/reports/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/investigator/reports/show.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ReportController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ReportController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Cases.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Cases.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Models/Complaints.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Complaints.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2021_05_01_075602_create_cases_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_05_01_075602_create_cases_table.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/migrations/2021_05_04_092544_create_complaints_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_05_04_092544_create_complaints_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/hos/reports/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/hos/reports/show.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/investigator/layout/investigator.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/investigator/layout/investigator.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/police/reports/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/police/reports/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -163,24 +170,24 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js.last.introduce.type" value="LET" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/admin/police" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/investigator" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Projects\final_year\cims\resources\views\investigator" />
+      <recent name="D:\Projects\final_year\cims\resources\views\admin\police" />
+      <recent name="D:\Projects\final_year\cims\resources\views\police\layout" />
+      <recent name="D:\Projects\final_year\cims\resources\views\investigator\layout" />
+      <recent name="D:\Projects\final_year\cims\resources\views\hos\layout" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Projects\final_year\cims\resources\views\components" />
       <recent name="D:\Projects\final_year\cims\resources\views\admin" />
       <recent name="D:\Projects\final_year\cims\resources\views\admin\stations" />
       <recent name="D:\Projects\final_year\cims\public" />
       <recent name="D:\Projects\final_year\cims\public\assets" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\Projects\final_year\cims\resources\views\admin\police" />
-      <recent name="D:\Projects\final_year\cims\resources\views\police\layout" />
-      <recent name="D:\Projects\final_year\cims\resources\views\investigator\layout" />
-      <recent name="D:\Projects\final_year\cims\resources\views\hos\layout" />
-      <recent name="D:\Projects\final_year\cims\resources\views\ag\layout" />
     </key>
   </component>
   <component name="RunManager" selected="npm.dev">
@@ -226,7 +233,7 @@
       <workItem from="1619854399887" duration="37072000" />
       <workItem from="1620036346424" duration="21181000" />
       <workItem from="1620111351917" duration="25103000" />
-      <workItem from="1620199374654" duration="3826000" />
+      <workItem from="1620199374654" duration="12068000" />
     </task>
     <task id="LOCAL-00001" summary="Bootstrap initialization">
       <created>1619854981682</created>
@@ -291,7 +298,14 @@
       <option name="project" value="LOCAL" />
       <updated>1619871449191</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Update investigator">
+      <created>1620205591428</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1620205591428</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -321,7 +335,8 @@
     <MESSAGE value="User Seeder Password hashing" />
     <MESSAGE value="Admin routes" />
     <MESSAGE value="sidebar nav" />
-    <option name="LAST_COMMIT_MESSAGE" value="sidebar nav" />
+    <MESSAGE value="Update investigator" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update investigator" />
   </component>
   <component name="WindowStateProjectService">
     <state x="847" y="371" key="#File_Watchers" timestamp="1619945591772">
@@ -392,9 +407,9 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="615" y="250" key="run.anything.popup/557.1080.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1620116929570" />
-    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup" timestamp="1620203910716">
+    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup" timestamp="1620230451284">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup/557.1080.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1620203910716" />
+    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup/557.1080.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1620230451284" />
   </component>
 </project>

@@ -154,3 +154,33 @@ Route::prefix('hos')->group(function (){
         });
     });
 });
+
+//  INVESTIGATOR
+Route::prefix('investigator')->group(function (){
+
+    Route::group(['middleware'=> 'auth.investigator'],function (){
+
+//    Report routes
+        Route::prefix('/report')->group(function (){
+
+            Route::get('/all',function () {
+                return view('investigator.reports.index',[
+                    'complaints'=>Complaints::where('investigator_id',\auth()->id())->get()
+                ]);
+            })->name("investigator.report.index");
+
+            Route::get('/{id}',function ($id) {
+                return view('investigator.reports.show',[
+                    'complaint'=>Complaints::findOrFail($id)
+                ]);
+            })->name('investigator.report.show');
+
+            Route::put('/{id}',[ReportController::class,'status'])
+                ->name('investigator.report.put');
+
+            Route::delete('/{id}',[ReportController::class,'destroy'])
+                ->name("investigator.report.destroy");
+
+        });
+    });
+});

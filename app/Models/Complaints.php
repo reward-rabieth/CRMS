@@ -21,4 +21,8 @@ class Complaints extends Model
     public function investigator() {
         return $this->belongsTo(User::class);
     }
+
+    public function cases() {
+        return $this->belongsTo(Cases::class);
+    }
 }

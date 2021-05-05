@@ -28,6 +28,8 @@ class CreateComplaintsTable extends Migration
             $table->unsignedBigInteger('police_id');
             $table->unsignedBigInteger('investigator_id')->nullable();
             $table->string('report',5000);
+            $table->string('status')->default('Pending');
+            $table->string('remarks')->nullable();
             $table->timestamp('created_at')->default(DB::raw('CURRENT_TIMESTAMP'));
             $table->timestamp('updated_at')->default(DB::raw('CURRENT_TIMESTAMP on update CURRENT_TIMESTAMP'));
 

@@ -20,4 +20,8 @@ class Cases extends Model
     public function officer() {
         return $this->belongsTo(User::class);
     }
+
+    public function report() {
+        return $this->hasOne(Complaints::class);
+    }
 }
