@@ -103,36 +103,60 @@
                         ->get();
 
                 @endphp
-                @if (session('status'))
-                    <div class="alert alert-success my-2">
-                        {{ session('status') }}
-                    </div>
-                @endif
-                <div class="row mt-4">
-                    <div class="col-4">
-                        <span>Allocate Investigator:</span>
+
+                <div class="row my-4">
+                    <div class="col bg-info">
+                        <h4 class="mt-2 font-weight-bold">Fill the form:</h4>
                     </div>
                 </div>
 
-                <form method="post" action="{{ route('hos.report.put',$complaint->id) }}">
-                    @csrf
-                    {{ method_field('PUT') }}
 
-                    <div class="row">
-                        <div class="col-4">
-                            <select class="form-select" name="investigator" aria-label="Default select example">
-                                <option disabled selected>Investigators</option>
-                                @foreach( $collections as $collection )
-                                    <option value="{{ $collection->name }}">{{ $collection->name }}</option>
-                                @endforeach
-                            </select>
-                        </div>
-                        <div class="col-4">
-                            <button class="btn btn-outline-primary">Update</button>
-                        </div>
-                    </div>
 
-                </form>
+                <div class=" my-2">
+                    <form method="post" action="{{ route('ag.case.put',$case->caseNumber) }}">
+                        <div class="row g-3">
+                            <div class="col">
+                                <div class="form-group">
+                                    <label for="defendantAddress">Section law</label>
+                                    <input type="text" value="{{ old('sectionLaw') }}" class="@error('sectionLaw') is-invalid @enderror form-control" name="sectionLaw" id="sectionLaw" aria-describedby="textHelp" placeholder="Section law">
+                                    @error('sectionLaw')
+                                    <div class="alert alert-danger">{{ $message }}</div>
+                                    @enderror
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="report" class="form-label">Statement</label>
+                            <textarea class="form-control @error('statement') is-invalid @enderror"  name="statement" id="statement" rows="5" placeholder="Attorney general statement">{{ old('statement') }}</textarea>
+                            @error('statement')
+                            <div class="alert alert-danger">{{ $message }}</div>
+                            @enderror
+                        </div>
+                        @csrf
+                        {{ method_field('PUT') }}
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" value="approve" name="status" id="Court">
+                            <label class="form-check-label" for="Court">
+                                Send to court
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" value="deny" name="status" id="Deny" checked>
+                            <label class="form-check-label" for="Deny">
+                                Deny
+                            </label>
+                        </div>
+
+                        @if ( session('status'))
+                            <div class="alert alert-success my-2">
+                                {{ session('status') }}
+                            </div>
+                        @endif
+                        <button class="btn btn-outline-success mr-2">Update report</button>
+
+                    </form>
+                </div>
 
             </div>
         </div>

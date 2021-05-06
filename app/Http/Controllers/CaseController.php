@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Redirect;
 
 class CaseController extends Controller
 {
@@ -80,5 +82,34 @@ class CaseController extends Controller
     public function destroy($id)
     {
         //
+    }
+
+    public function status(Request $request, $id) {
+        if ($request->input('status') == "approve"){
+        // Validate input
+            $request->validate([
+                'statement' => 'required|max:500',
+                'sectionLaw' => 'required',
+            ]);
+//            Update case
+            DB::table('cases')
+                ->where('caseNumber', '=', $id)
+                ->update([
+                    'status' => 'Court',
+                    'statement' => $request->input('statement'),
+                    'sectionLaw' => $request->input('sectionLaw')
+                ]);
+        }else{
+            $request->validate([
+                'statement' => 'required|max:500',
+            ]);
+            DB::table('cases')
+                ->where('caseNumber', '=', $id)
+                ->update([
+                    'status' => 'Denied',
+                    'statement' => $request->input('statement')
+                ]);
+        }
+        return Redirect::route('ag.case.show',$id)->with('status', 'Complaint updated!');
     }
 }
