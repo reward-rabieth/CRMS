@@ -4,9 +4,11 @@ use App\Http\Controllers\CaseController;
 use App\Http\Controllers\PoliceController;
 use App\Http\Controllers\ReportController;
 use App\Http\Controllers\StationsController;
+use App\Models\Cases;
 use App\Models\Complaints;
 use App\Models\Stations;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -180,7 +182,41 @@ Route::prefix('investigator')->group(function (){
 
             Route::delete('/{id}',[ReportController::class,'destroy'])
                 ->name("investigator.report.destroy");
+        });
+    });
+});
 
+//  INVESTIGATOR
+Route::prefix('ag')->group(function (){
+
+    Route::group(['middleware'=> 'auth.ag'],function (){
+
+//    Report routes
+        Route::prefix('/cases')->group(function (){
+
+            Route::get('/all',function () {
+                return view('ag.cases.index',[
+                    'cases'=>Cases::all()
+                ]);
+            })->name("ag.case.index");
+
+            Route::get('/{id}',function ($id) {
+                $case = DB::table('cases')
+                    ->where('caseNumber','=',$id)
+                    ->first();
+                $complaint =  Complaints::find($case->report_id);
+
+                return view('ag.cases.show',[
+                    'case'=>$case,
+                    'complaint'=>$complaint
+                ]);
+            })->name('ag.case.show');
+
+            Route::put('/{id}',[CaseController::class,'status'])
+                ->name('ag.case.put');
+
+            Route::delete('/{id}',[CaseController::class,'destroy'])
+                ->name("ag.case.destroy");
         });
     });
 });
