@@ -13,10 +13,13 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="637d2deb-9e0f-4924-89fd-4d6288848bd1" name="Default Changelist" comment="Show cases to ag">
+    <list default="true" id="637d2deb-9e0f-4924-89fd-4d6288848bd1" name="Default Changelist" comment="send case to court">
+      <change afterPath="$PROJECT_DIR$/resources/views/hos/police/create.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/hos/police/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CaseController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CaseController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/ag/cases/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/ag/cases/show.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/hos/layout/hos.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/hos/layout/hos.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -161,25 +164,25 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js.last.introduce.type" value="LET" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/investigator" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/hos" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\Projects\final_year\cims\resources\views\investigator" />
-      <recent name="D:\Projects\final_year\cims\resources\views\admin\police" />
-      <recent name="D:\Projects\final_year\cims\resources\views\police\layout" />
-      <recent name="D:\Projects\final_year\cims\resources\views\investigator\layout" />
-      <recent name="D:\Projects\final_year\cims\resources\views\hos\layout" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Projects\final_year\cims\resources\views\components" />
       <recent name="D:\Projects\final_year\cims\resources\views\admin" />
       <recent name="D:\Projects\final_year\cims\resources\views\admin\stations" />
       <recent name="D:\Projects\final_year\cims\public" />
       <recent name="D:\Projects\final_year\cims\public\assets" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Projects\final_year\cims\resources\views\hos" />
+      <recent name="D:\Projects\final_year\cims\resources\views\investigator" />
+      <recent name="D:\Projects\final_year\cims\resources\views\admin\police" />
+      <recent name="D:\Projects\final_year\cims\resources\views\police\layout" />
+      <recent name="D:\Projects\final_year\cims\resources\views\investigator\layout" />
     </key>
   </component>
   <component name="RunManager" selected="npm.dev">
@@ -225,7 +228,8 @@
       <workItem from="1619854399887" duration="37072000" />
       <workItem from="1620036346424" duration="21181000" />
       <workItem from="1620111351917" duration="25103000" />
-      <workItem from="1620199374654" duration="18478000" />
+      <workItem from="1620199374654" duration="20666000" />
+      <workItem from="1620376377104" duration="1592000" />
     </task>
     <task id="LOCAL-00001" summary="Bootstrap initialization">
       <created>1619854981682</created>
@@ -311,7 +315,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620287022446</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="send case to court">
+      <created>1620288781398</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1620288781398</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -344,7 +355,8 @@
     <MESSAGE value="Update investigator" />
     <MESSAGE value="Create case" />
     <MESSAGE value="Show cases to ag" />
-    <option name="LAST_COMMIT_MESSAGE" value="Show cases to ag" />
+    <MESSAGE value="send case to court" />
+    <option name="LAST_COMMIT_MESSAGE" value="send case to court" />
   </component>
   <component name="WindowStateProjectService">
     <state x="847" y="371" key="#File_Watchers" timestamp="1619945591772">
@@ -367,10 +379,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="690" y="286" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/557.1080.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1619941303782" />
-    <state x="690" y="294" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1620288147697">
+    <state x="690" y="294" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1620378261489">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="690" y="294" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/557.1080.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1620288147697" />
+    <state x="690" y="294" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/557.1080.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1620378261489" />
     <state x="627" y="317" key="EditFileWatcherDialog" timestamp="1619945575536">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -407,10 +419,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="377" y="66" key="SettingsEditor/557.1080.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1620283761798" />
-    <state x="552" y="268" key="Vcs.Push.Dialog.v2" timestamp="1620231452896">
+    <state x="552" y="268" key="Vcs.Push.Dialog.v2" timestamp="1620288875367">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="552" y="268" key="Vcs.Push.Dialog.v2/557.1080.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1620231452896" />
+    <state x="552" y="268" key="Vcs.Push.Dialog.v2/557.1080.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1620288875367" />
     <state x="777" y="449" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1620284698356">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -419,9 +431,9 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="615" y="250" key="run.anything.popup/557.1080.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1620116929570" />
-    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup" timestamp="1620288132933">
+    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup" timestamp="1620377941789">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup/557.1080.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1620288132933" />
+    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup/557.1080.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1620377941789" />
   </component>
 </project>

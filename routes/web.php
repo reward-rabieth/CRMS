@@ -7,8 +7,11 @@ use App\Http\Controllers\StationsController;
 use App\Models\Cases;
 use App\Models\Complaints;
 use App\Models\Stations;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Redirect;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -154,6 +157,65 @@ Route::prefix('hos')->group(function (){
                 ->name("hos.report.destroy");
 
         });
+
+//    Police routes
+        Route::prefix('/police')->group(function (){
+
+            Route::get('/create',function (){
+                return view('hos.police.create');
+            })
+                ->name("hos.police.create");
+
+            Route::post('/store',function (Request $request){
+                // Validate input
+                $request->validate([
+                    'name' => 'required|max:255',
+                    'policeId' => 'unique:users,username|required|String',
+                    'gender' => 'required|String',
+                    'age' => 'required|Integer'
+                ]);
+
+                // Generate password Hash
+                $username = $request->input('policeId');
+                $pwd = Hash::make($username);
+
+                // Store new user
+                $id = DB::table('users')->insertGetId([
+                    'name' => $request->input('name'),
+                    'username' => $username,
+                    'password' => $pwd,
+                    'gender' => $request->input('gender'),
+                    'age' => $request->input('age')
+                ]);
+
+                // Assign police role to the user
+                DB::table('role_user')->insert([
+                    'role_id'=>5,
+                    'user_id'=>$id
+                ]);
+
+                return Redirect::route('hos.police.create')->with('status', 'Police created!');
+            })
+                ->name("hos.police.store");
+
+            Route::get('',function (){
+                //
+                $polices = DB::table('users')
+                    ->join('role_user', 'users.id', '=', 'role_user.user_id')
+                    ->where('role_user.role_id', '=', 5)
+                    ->get();
+
+                return view('hos.police.index',[
+                    'polices'=> $polices
+                ]);
+            })
+                ->name("hos.police.index");
+
+            Route::delete('/{id}',[StationsController::class,'destroy'])
+                ->name("hos.police.destroy");
+
+        });
+
     });
 });
 
@@ -186,7 +248,7 @@ Route::prefix('investigator')->group(function (){
     });
 });
 
-//  INVESTIGATOR
+//  ATTORNEY GENERAL
 Route::prefix('ag')->group(function (){
 
     Route::group(['middleware'=> 'auth.ag'],function (){
