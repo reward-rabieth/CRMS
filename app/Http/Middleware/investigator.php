@@ -5,6 +5,7 @@ namespace App\Http\Middleware;
 use Closure;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\DB;
 
 class investigator
 {
@@ -21,12 +22,17 @@ class investigator
             return redirect()->route('login');
         }
 
-        $roles = Auth::user()->roles()->get();
+        $collection = DB::table('users')
+            ->join('role_user', 'role_user.user_id', '=', 'users.id')
+            ->join('roles', 'role_user.role_id', '=', 'roles.id')
+            ->where('users.id', '=', \auth()->id())
+            ->select('roles.role')
+            ->get();
 
-        foreach ($roles as $role){
-            if ($role["role"] == "INVESTIGATOR") {
-                return $next($request);
-            }
+        $json_decode = json_decode($collection, true);
+
+        if ($json_decode[0]['role'] == "INVESTIGATOR") {
+            return $next($request);
         }
 
         abort(403);

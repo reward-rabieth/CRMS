@@ -13,10 +13,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="637d2deb-9e0f-4924-89fd-4d6288848bd1" name="Default Changelist" comment="Investigator view cases">
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/cases/index.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/cases/show.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="637d2deb-9e0f-4924-89fd-4d6288848bd1" name="Default Changelist" comment="Hos Investigator update">
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/layout/admin.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/layout/admin.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -227,7 +225,7 @@
       <workItem from="1620036346424" duration="21181000" />
       <workItem from="1620111351917" duration="25103000" />
       <workItem from="1620199374654" duration="20666000" />
-      <workItem from="1620376377104" duration="6003000" />
+      <workItem from="1620376377104" duration="6492000" />
     </task>
     <task id="LOCAL-00001" summary="Bootstrap initialization">
       <created>1619854981682</created>
@@ -362,7 +360,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620382329428</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Hos Investigator update">
+      <created>1620383062392</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1620383062392</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -402,7 +407,8 @@
     <MESSAGE value="Create new investigator" />
     <MESSAGE value="Attorney general" />
     <MESSAGE value="Investigator view cases" />
-    <option name="LAST_COMMIT_MESSAGE" value="Investigator view cases" />
+    <MESSAGE value="Hos Investigator update" />
+    <option name="LAST_COMMIT_MESSAGE" value="Hos Investigator update" />
   </component>
   <component name="WindowStateProjectService">
     <state x="847" y="371" key="#File_Watchers" timestamp="1619945591772">
@@ -465,10 +471,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="377" y="66" key="SettingsEditor/557.1080.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1620283761798" />
-    <state x="552" y="268" key="Vcs.Push.Dialog.v2" timestamp="1620382345480">
+    <state x="552" y="268" key="Vcs.Push.Dialog.v2" timestamp="1620383067593">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="552" y="268" key="Vcs.Push.Dialog.v2/557.1080.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1620382345480" />
+    <state x="552" y="268" key="Vcs.Push.Dialog.v2/557.1080.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1620383067593" />
     <state x="777" y="449" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1620284698356">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>

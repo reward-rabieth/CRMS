@@ -92,14 +92,35 @@ Route::prefix('admin')->group(function (){
         });
 
 //    Case routes
-        Route::prefix('/case')->group(function (){
-            Route::get('/add',function (){
-                echo "Testing";
-            })->name("admin.case.add");
-            Route::get('/view',function (){
-                echo "Testing";
-            })->name("admin.case.add");
+
+        //    Cases routes
+        Route::prefix('/cases')->group(function (){
+
+            Route::get('/all',function () {
+                return view('admin.cases.index',[
+                    'cases'=>Cases::all()
+                ]);
+            })->name("admin.case.index");
+
+            Route::get('/{id}',function ($id) {
+                $case = DB::table('cases')
+                    ->where('caseNumber','=',$id)
+                    ->first();
+                $complaint =  Complaints::find($case->report_id);
+
+                return view('admin.cases.show',[
+                    'case'=>$case,
+                    'complaint'=>$complaint
+                ]);
+            })->name('admin.case.show');
+
+            Route::put('/{id}',[CaseController::class,'status'])
+                ->name('admin.case.put');
+
+            Route::delete('/{id}',[CaseController::class,'destroy'])
+                ->name("admin.case.destroy");
         });
+
     });
 });
 
