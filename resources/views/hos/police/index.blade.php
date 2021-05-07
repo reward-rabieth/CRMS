@@ -29,7 +29,7 @@
                     <td>{{ $police->gender }}</td>
                     <td>{{ $police->age }}</td>
                     <td>
-                        <delete route="{{ route('admin.police.destroy', $police->id) }}" id="{{ $police->id }}" ></delete>
+                        <delete route="{{ route('hos.police.destroy', $police->id) }}" id="{{ $police->id }}" ></delete>
                     </td>
                 </tr>
             @endforeach

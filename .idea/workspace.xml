@@ -13,12 +13,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="637d2deb-9e0f-4924-89fd-4d6288848bd1" name="Default Changelist" comment="send case to court">
-      <change afterPath="$PROJECT_DIR$/resources/views/hos/police/create.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/hos/police/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CaseController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CaseController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/hos/layout/hos.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/hos/layout/hos.blade.php" afterDir="false" />
+    <list default="true" id="637d2deb-9e0f-4924-89fd-4d6288848bd1" name="Default Changelist" comment="Hos dashboard Update">
+      <change beforePath="$PROJECT_DIR$/resources/views/hos/police/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/hos/police/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -229,7 +225,7 @@
       <workItem from="1620036346424" duration="21181000" />
       <workItem from="1620111351917" duration="25103000" />
       <workItem from="1620199374654" duration="20666000" />
-      <workItem from="1620376377104" duration="1592000" />
+      <workItem from="1620376377104" duration="2084000" />
     </task>
     <task id="LOCAL-00001" summary="Bootstrap initialization">
       <created>1619854981682</created>
@@ -322,7 +318,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620288781398</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Hos dashboard Update">
+      <created>1620378861473</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1620378861473</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -356,7 +359,8 @@
     <MESSAGE value="Create case" />
     <MESSAGE value="Show cases to ag" />
     <MESSAGE value="send case to court" />
-    <option name="LAST_COMMIT_MESSAGE" value="send case to court" />
+    <MESSAGE value="Hos dashboard Update" />
+    <option name="LAST_COMMIT_MESSAGE" value="Hos dashboard Update" />
   </component>
   <component name="WindowStateProjectService">
     <state x="847" y="371" key="#File_Watchers" timestamp="1619945591772">

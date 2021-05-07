@@ -211,7 +211,10 @@ Route::prefix('hos')->group(function (){
             })
                 ->name("hos.police.index");
 
-            Route::delete('/{id}',[StationsController::class,'destroy'])
+            Route::delete('/{id}',function (int $id){
+                //
+                return User::where('id',$id)->delete();
+            })
                 ->name("hos.police.destroy");
 
         });
