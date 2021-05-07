@@ -13,7 +13,13 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="637d2deb-9e0f-4924-89fd-4d6288848bd1" name="Default Changelist" comment="Investigator guard fix" />
+    <list default="true" id="637d2deb-9e0f-4924-89fd-4d6288848bd1" name="Default Changelist" comment="Admin view cases">
+      <change afterPath="$PROJECT_DIR$/resources/views/police/reports/show.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ReportController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ReportController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/police/reports/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/police/reports/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -157,7 +163,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js.last.introduce.type" value="LET" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/admin" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/police/reports" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
     <property name="vue.rearranger.settings.migration" value="true" />
@@ -171,11 +177,11 @@
       <recent name="D:\Projects\final_year\cims\public\assets" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Projects\final_year\cims\resources\views\police\reports" />
       <recent name="D:\Projects\final_year\cims\resources\views\admin" />
       <recent name="D:\Projects\final_year\cims\resources\views\investigator" />
       <recent name="D:\Projects\final_year\cims\resources\views\hos" />
       <recent name="D:\Projects\final_year\cims\resources\views\admin\police" />
-      <recent name="D:\Projects\final_year\cims\resources\views\police\layout" />
     </key>
   </component>
   <component name="RunManager" selected="npm.dev">
@@ -222,7 +228,7 @@
       <workItem from="1620036346424" duration="21181000" />
       <workItem from="1620111351917" duration="25103000" />
       <workItem from="1620199374654" duration="20666000" />
-      <workItem from="1620376377104" duration="6866000" />
+      <workItem from="1620376377104" duration="7506000" />
     </task>
     <task id="LOCAL-00001" summary="Bootstrap initialization">
       <created>1619854981682</created>
@@ -371,7 +377,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620383662947</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Admin view cases">
+      <created>1620383857860</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1620383857860</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -413,7 +426,8 @@
     <MESSAGE value="Investigator view cases" />
     <MESSAGE value="Hos Investigator update" />
     <MESSAGE value="Investigator guard fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="Investigator guard fix" />
+    <MESSAGE value="Admin view cases" />
+    <option name="LAST_COMMIT_MESSAGE" value="Admin view cases" />
   </component>
   <component name="WindowStateProjectService">
     <state x="847" y="371" key="#File_Watchers" timestamp="1619945591772">

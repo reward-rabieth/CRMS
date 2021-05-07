@@ -138,6 +138,13 @@ Route::prefix('police')->group(function (){
             Route::post('',[ReportController::class,'store'])
                 ->name("police.report.store");
 
+            Route::get('/{id}',function ($id) {
+                return view('police.reports.show',[
+                    'complaint'=>Complaints::findOrFail($id)
+                ]);
+            })->name('police.report.show');
+
+
             Route::delete('/{id}',[ReportController::class,'destroy'])
                 ->name("admin.station.destroy");
         });

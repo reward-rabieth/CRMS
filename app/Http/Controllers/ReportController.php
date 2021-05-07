@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Complaints;
 use Illuminate\Contracts\Foundation\Application;
 use Illuminate\Contracts\View\Factory;
 use Illuminate\Contracts\View\View;
@@ -21,7 +22,9 @@ class ReportController extends Controller
     public function index()
     {
         //
-        return view('police.reports.index');
+        return view('police.reports.index',[
+            'complaints'=>Complaints::all()
+        ]);
     }
 
     /**
@@ -125,8 +128,8 @@ class ReportController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  int  $id
-     * @return Response
+     * @param int $id
+     * @return void
      */
     public function destroy($id)
     {
