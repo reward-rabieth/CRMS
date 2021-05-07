@@ -16,7 +16,7 @@
                 <a href="{{ route("hos.police.index") }}"><li><ion-icon class="mr-2" name="eye-outline"></ion-icon> View</li></a>
             </ul>
         </div>
-        <a href="{{ route("admin.case.add") }}"><div class="nav-item"><ion-icon class="mr-2" name="file-tray-stacked-outline"></ion-icon> VIEW CASES</div></a>
+        <a href="{{ route("hos.case.index") }}"><div class="nav-item"><ion-icon class="mr-2" name="file-tray-stacked-outline"></ion-icon> VIEW CASES</div></a>
         <a href="{{ route("logout") }}" onclick="event.preventDefault();
                         document.getElementById('logout-form').submit();">
             <div class="nav-item">
@@ -33,6 +33,5 @@
             @yield('hos')
         </div>
     </main>
-
 
 @endsection

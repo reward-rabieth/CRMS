@@ -130,7 +130,7 @@ Route::prefix('hos')->group(function (){
 
     Route::group(['middleware'=> 'auth.hos'],function (){
 
-//    Report routes
+    //    Report routes
         Route::prefix('/report')->group(function (){
 //            Route::get('/create',[ReportController::class,'create'])
 //                ->name("police.report.create");
@@ -158,7 +158,7 @@ Route::prefix('hos')->group(function (){
 
         });
 
-//    Police routes
+    //    Police routes
         Route::prefix('/police')->group(function (){
 
             Route::get('/create',function (){
@@ -219,6 +219,33 @@ Route::prefix('hos')->group(function (){
 
         });
 
+    //    Cases routes
+        Route::prefix('/case')->group(function (){
+
+            Route::get('/all',function () {
+                return view('hos.cases.index',[
+                    'cases'=>Cases::all()
+                ]);
+            })->name("hos.case.index");
+
+            Route::get('/{id}',function ($id) {
+                $case = DB::table('cases')
+                    ->where('caseNumber','=',$id)
+                    ->first();
+                $complaint =  Complaints::find($case->report_id);
+
+                return view('hos.cases.show',[
+                    'case'=>$case,
+                    'complaint'=>$complaint
+                ]);
+            })->name('hos.case.show');
+
+            Route::put('/{id}',[CaseController::class,'status'])
+                ->name('hos.case.put');
+
+            Route::delete('/{id}',[CaseController::class,'destroy'])
+                ->name("hos.case.destroy");
+        });
     });
 });
 
