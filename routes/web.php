@@ -25,9 +25,32 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-//Route::get('/', function () {
-//    return view('welcome');
-//});
+Route::get('/', function () {
+    $collection = DB::table('users')
+        ->join('role_user', 'role_user.user_id', '=', 'users.id')
+        ->join('roles', 'role_user.role_id', '=', 'roles.id')
+        ->where('users.id', '=', \auth()->id())
+        ->select('roles.role')
+        ->get();
+
+    $json_decode = json_decode($collection, true);
+    if ($json_decode[0]['role'] == "RCO") {
+
+        return Redirect::route("admin.station.create");
+    }
+    if ($json_decode[0]['role'] == "INVESTIGATOR") {
+        return Redirect::route("investigator.report.all");
+    }
+    if ($json_decode[0]['role'] == "HOS") {
+        return Redirect::route("hos.report.all");
+    }
+    if ($json_decode[0]['role'] == "AG") {
+        return Redirect::route("ag.cases.all");
+    }
+    if ($json_decode[0]['role'] == "POLICE") {
+        return Redirect::route("police.report.create");
+    }
+});
 
 Auth::routes();
 /*
