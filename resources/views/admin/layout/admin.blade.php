@@ -14,7 +14,6 @@
                 <a href="{{ route("admin.station.index") }}"><li><ion-icon class="mr-2" name="eye-outline"></ion-icon> View</li></a>
             </ul>
         </div>
-        <a href="{{ route("admin.crimes.add") }}"><div class="nav-item"><ion-icon class="mr-2" name="eye-outline"></ion-icon> VIEW CRIMES</div></a>
         <div class="category-wrapper">
             <div class="nav-item collapse-link d-flex align-items-center justify-content-start" >
                 <ion-icon class="mr-2" name="people-outline"></ion-icon>

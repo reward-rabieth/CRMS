@@ -13,10 +13,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="637d2deb-9e0f-4924-89fd-4d6288848bd1" name="Default Changelist" comment="Hos Investigator update">
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/layout/admin.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/layout/admin.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
-    </list>
+    <list default="true" id="637d2deb-9e0f-4924-89fd-4d6288848bd1" name="Default Changelist" comment="Investigator guard fix" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -225,7 +222,7 @@
       <workItem from="1620036346424" duration="21181000" />
       <workItem from="1620111351917" duration="25103000" />
       <workItem from="1620199374654" duration="20666000" />
-      <workItem from="1620376377104" duration="6492000" />
+      <workItem from="1620376377104" duration="6866000" />
     </task>
     <task id="LOCAL-00001" summary="Bootstrap initialization">
       <created>1619854981682</created>
@@ -367,7 +364,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620383062392</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="Investigator guard fix">
+      <created>1620383662947</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1620383662947</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -408,7 +412,8 @@
     <MESSAGE value="Attorney general" />
     <MESSAGE value="Investigator view cases" />
     <MESSAGE value="Hos Investigator update" />
-    <option name="LAST_COMMIT_MESSAGE" value="Hos Investigator update" />
+    <MESSAGE value="Investigator guard fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="Investigator guard fix" />
   </component>
   <component name="WindowStateProjectService">
     <state x="847" y="371" key="#File_Watchers" timestamp="1619945591772">
@@ -431,10 +436,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="690" y="286" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/557.1080.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1619941303782" />
-    <state x="690" y="294" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1620378261489">
+    <state x="690" y="294" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1620383600636">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="690" y="294" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/557.1080.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1620378261489" />
+    <state x="690" y="294" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/557.1080.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1620383600636" />
     <state x="627" y="317" key="EditFileWatcherDialog" timestamp="1619945575536">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -471,21 +476,21 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="377" y="66" key="SettingsEditor/557.1080.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1620283761798" />
-    <state x="552" y="268" key="Vcs.Push.Dialog.v2" timestamp="1620383067593">
+    <state x="552" y="268" key="Vcs.Push.Dialog.v2" timestamp="1620383672431">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="552" y="268" key="Vcs.Push.Dialog.v2/557.1080.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1620383067593" />
-    <state x="777" y="449" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1620284698356">
+    <state x="552" y="268" key="Vcs.Push.Dialog.v2/557.1080.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1620383672431" />
+    <state x="777" y="449" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1620383618697">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="777" y="449" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/557.1080.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1620284698356" />
+    <state x="777" y="449" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/557.1080.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1620383618697" />
     <state x="615" y="250" key="run.anything.popup" timestamp="1620116929570">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="615" y="250" key="run.anything.popup/557.1080.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1620116929570" />
-    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup" timestamp="1620380707538">
+    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup" timestamp="1620383585655">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup/557.1080.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1620380707538" />
+    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup/557.1080.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1620383585655" />
   </component>
 </project>
