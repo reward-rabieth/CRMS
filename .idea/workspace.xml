@@ -13,11 +13,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="637d2deb-9e0f-4924-89fd-4d6288848bd1" name="Default Changelist" comment="Attorney general">
-      <change afterPath="$PROJECT_DIR$/resources/views/investigator/cases/index.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/investigator/cases/show.blade.php" afterDir="false" />
+    <list default="true" id="637d2deb-9e0f-4924-89fd-4d6288848bd1" name="Default Changelist" comment="Investigator view cases">
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/cases/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/cases/show.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/investigator/layout/investigator.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/investigator/layout/investigator.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -163,7 +162,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js.last.introduce.type" value="LET" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/investigator" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/admin" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
     <property name="vue.rearranger.settings.migration" value="true" />
@@ -177,11 +176,11 @@
       <recent name="D:\Projects\final_year\cims\public\assets" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Projects\final_year\cims\resources\views\admin" />
       <recent name="D:\Projects\final_year\cims\resources\views\investigator" />
       <recent name="D:\Projects\final_year\cims\resources\views\hos" />
       <recent name="D:\Projects\final_year\cims\resources\views\admin\police" />
       <recent name="D:\Projects\final_year\cims\resources\views\police\layout" />
-      <recent name="D:\Projects\final_year\cims\resources\views\investigator\layout" />
     </key>
   </component>
   <component name="RunManager" selected="npm.dev">
@@ -228,7 +227,7 @@
       <workItem from="1620036346424" duration="21181000" />
       <workItem from="1620111351917" duration="25103000" />
       <workItem from="1620199374654" duration="20666000" />
-      <workItem from="1620376377104" duration="5350000" />
+      <workItem from="1620376377104" duration="6003000" />
     </task>
     <task id="LOCAL-00001" summary="Bootstrap initialization">
       <created>1619854981682</created>
@@ -356,7 +355,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620381838204</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Investigator view cases">
+      <created>1620382329428</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1620382329428</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -395,7 +401,8 @@
     <MESSAGE value="HOS view case" />
     <MESSAGE value="Create new investigator" />
     <MESSAGE value="Attorney general" />
-    <option name="LAST_COMMIT_MESSAGE" value="Attorney general" />
+    <MESSAGE value="Investigator view cases" />
+    <option name="LAST_COMMIT_MESSAGE" value="Investigator view cases" />
   </component>
   <component name="WindowStateProjectService">
     <state x="847" y="371" key="#File_Watchers" timestamp="1619945591772">
@@ -458,10 +465,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="377" y="66" key="SettingsEditor/557.1080.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1620283761798" />
-    <state x="552" y="268" key="Vcs.Push.Dialog.v2" timestamp="1620381855096">
+    <state x="552" y="268" key="Vcs.Push.Dialog.v2" timestamp="1620382345480">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="552" y="268" key="Vcs.Push.Dialog.v2/557.1080.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1620381855096" />
+    <state x="552" y="268" key="Vcs.Push.Dialog.v2/557.1080.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1620382345480" />
     <state x="777" y="449" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1620284698356">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>

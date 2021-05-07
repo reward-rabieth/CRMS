@@ -54,7 +54,7 @@ Route::prefix('admin')->group(function (){
 
         });
 
-//    Crimes routes
+//    Cases routes
         Route::prefix('/crimes')->group(function (){
             Route::get('/add',function (){
                 echo "Testing";
@@ -281,7 +281,7 @@ Route::prefix('investigator')->group(function (){
                 ->name("investigator.report.destroy");
         });
 
-        //    Report routes
+        //    Cases routes
         Route::prefix('/cases')->group(function (){
 
             Route::get('/all',function () {

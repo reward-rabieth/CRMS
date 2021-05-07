@@ -1,24 +1,24 @@
-@extends('hos.layout.hos')
+@extends('admin.layout.admin')
 
-@section('hos')
+@section('admin')
     <div class="container-fluid">
         <div class="d-flex justify-content-center ">
-                <img src="{{ url('/assets/images/logo.png') }}" alt="">
+            <img src="{{ url('/assets/images/logo.png') }}" alt="">
         </div>
 
         <div class="d-flex  my-2 justify-content-center ">
-                <h2 class="font-weight-bold">CASE REPORT BOOK (RB)</h2>
+            <h2 class="font-weight-bold">CASE REPORT BOOK (RB)</h2>
         </div>
 
         <div class="d-flex bg-info px-2 py-2 my-2 justify-content-between ">
-                <div>
-                    <span class="font-weight-bold">REPORT NUMBER:</span>
-                    <span>{{ $complaint->id }}</span>
-                </div>
-                <div>
-                    <span class="font-weight-bold">DATE:</span>
-                    <span >{{ $complaint->created_at }}</span>
-                </div>
+            <div>
+                <span class="font-weight-bold">REPORT NUMBER:</span>
+                <span>{{ $case->caseNumber }}</span>
+            </div>
+            <div>
+                <span class="font-weight-bold">DATE:</span>
+                <span >{{ $case->date }}</span>
+            </div>
         </div>
 
         <div class="card">
@@ -99,40 +99,10 @@
                         ->join('role_user', 'role_user.user_id', '=', 'users.id')
                         ->join('roles', 'role_user.role_id', '=', 'roles.id')
                         ->where('role_user.role_id', '=', 2)
-                        ->select('users.name','users.username')
+                        ->select('users.name')
                         ->get();
 
                 @endphp
-                @if (session('status'))
-                    <div class="alert alert-success my-2">
-                        {{ session('status') }}
-                    </div>
-                @endif
-                <div class="row mt-4">
-                    <div class="col-4">
-                        <span>Allocate Investigator:</span>
-                    </div>
-                </div>
-
-                <form method="post" action="{{ route('hos.report.put',$complaint->id) }}">
-                    @csrf
-                    {{ method_field('PUT') }}
-
-                    <div class="row">
-                        <div class="col-4">
-                            <select class="form-select" name="investigator" aria-label="Default select example">
-                                <option disabled selected>Investigators</option>
-                                @foreach( $collections as $collection )
-                                    <option value="{{ $collection->username }}">{{ $collection->name }}</option>
-                                @endforeach
-                            </select>
-                        </div>
-                        <div class="col-4">
-                            <button class="btn btn-outline-primary">Update</button>
-                        </div>
-                    </div>
-
-                </form>
 
             </div>
         </div>
