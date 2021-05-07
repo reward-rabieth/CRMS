@@ -3,30 +3,8 @@
 @section('content')
     <div class="side-bar pt-5">
         {{--        Navigation bar--}}
-        <div class="category-wrapper">
-            <div class="nav-item collapse-link d-flex align-items-center justify-content-start" >
-                <ion-icon class="mr-2" name="home-outline"></ion-icon>
-                <span>MANAGE STATIONS</span>
-                {{--                <ion-icon name="chevron-down-outline" class="chevron"></ion-icon>--}}
-            </div>
-            <ul class="sub-category">
-                <a href="{{ route("admin.station.create") }}"><li><ion-icon class="mr-2" name="add-outline"></ion-icon> Add</li></a>
-                <a href="{{ route("admin.station.index") }}"><li><ion-icon class="mr-2" name="eye-outline"></ion-icon> View</li></a>
-            </ul>
-        </div>
-        <a href="{{ route("hos.report.index") }}"><div class="nav-item"><ion-icon class="mr-2" name="eye-outline"></ion-icon> VIEW COMPLAINTS</div></a>
-        <div class="category-wrapper">
-            <div class="nav-item collapse-link d-flex align-items-center justify-content-start" >
-                <ion-icon class="mr-2" name="people-outline"></ion-icon>
-                <span> MANAGE POLICE</span>
-                {{--                <ion-icon name="chevron-down-outline" class="chevron"></ion-icon>--}}
-            </div>
-            <ul class="sub-category">
-                <a href="{{ route("admin.police.create") }}"><li><ion-icon class="mr-2" name="add-outline"></ion-icon> Add</li></a>
-                <a href="{{ route("admin.police.index") }}"><li><ion-icon class="mr-2" name="eye-outline"></ion-icon> View</li></a>
-            </ul>
-        </div>
-        <a href="{{ route("admin.case.add") }}"><div class="nav-item"><ion-icon class="mr-2" name="file-tray-stacked-outline"></ion-icon> VIEW CASES</div></a>
+
+        <a href="{{ route("ag.case.index") }}"><div class="nav-item"><ion-icon class="mr-2" name="file-tray-stacked-outline"></ion-icon> VIEW CASES</div></a>
         <a href="{{ route("logout") }}" onclick="event.preventDefault();
                         document.getElementById('logout-form').submit();">
             <div class="nav-item">
