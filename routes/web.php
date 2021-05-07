@@ -179,6 +179,7 @@ Route::prefix('hos')->group(function (){
                 $username = $request->input('policeId');
                 $pwd = Hash::make($username);
 
+
                 // Store new user
                 $id = DB::table('users')->insertGetId([
                     'name' => $request->input('name'),
@@ -187,13 +188,18 @@ Route::prefix('hos')->group(function (){
                     'gender' => $request->input('gender'),
                     'age' => $request->input('age')
                 ]);
-
-                // Assign police role to the user
-                DB::table('role_user')->insert([
-                    'role_id'=>5,
-                    'user_id'=>$id
-                ]);
-
+                if (! $request->has('investigator')){
+                    // Assign police role to the user
+                    DB::table('role_user')->insert([
+                        'role_id'=>5,
+                        'user_id'=>$id
+                    ]);
+                }else{
+                    DB::table('role_user')->insert([
+                        'role_id'=>2,
+                        'user_id'=>$id
+                    ]);
+                }
                 return Redirect::route('hos.police.create')->with('status', 'Police created!');
             })
                 ->name("hos.police.store");

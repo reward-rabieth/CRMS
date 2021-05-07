@@ -41,6 +41,11 @@
                     @enderror
                 </div>
 
+                <div class="ml-3 form-group form-check form-switch">
+                    <input class="form-check-input" name="investigator" type="checkbox" id="flexSwitchCheckDefault">
+                    <label class="form-check-label" for="flexSwitchCheckDefault">Investigator</label>
+                </div>
+
                 @if (session('status'))
                     <div class="alert alert-success my-2">
                         {{ session('status') }}
