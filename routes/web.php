@@ -103,7 +103,6 @@ Route::prefix('admin')->group(function (){
     });
 });
 
-
 //  POLICE
 Route::prefix('police')->group(function (){
     Route::group(['middleware'=> 'auth.police'],function (){
@@ -260,7 +259,7 @@ Route::prefix('investigator')->group(function (){
 
     Route::group(['middleware'=> 'auth.investigator'],function (){
 
-//    Report routes
+        //    Report routes
         Route::prefix('/report')->group(function (){
 
             Route::get('/all',function () {
@@ -281,6 +280,35 @@ Route::prefix('investigator')->group(function (){
             Route::delete('/{id}',[ReportController::class,'destroy'])
                 ->name("investigator.report.destroy");
         });
+
+        //    Report routes
+        Route::prefix('/cases')->group(function (){
+
+            Route::get('/all',function () {
+                return view('investigator.cases.index',[
+                    'cases'=>Cases::all()
+                ]);
+            })->name("investigator.case.index");
+
+            Route::get('/{id}',function ($id) {
+                $case = DB::table('cases')
+                    ->where('caseNumber','=',$id)
+                    ->first();
+                $complaint =  Complaints::find($case->report_id);
+
+                return view('investigator.cases.show',[
+                    'case'=>$case,
+                    'complaint'=>$complaint
+                ]);
+            })->name('investigator.case.show');
+
+            Route::put('/{id}',[CaseController::class,'status'])
+                ->name('investigator.case.put');
+
+            Route::delete('/{id}',[CaseController::class,'destroy'])
+                ->name("investigator.case.destroy");
+        });
+
     });
 });
 
