@@ -13,13 +13,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="637d2deb-9e0f-4924-89fd-4d6288848bd1" name="Default Changelist" comment="Home route authentication middleware">
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/LossReportController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/LossReport.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2021_05_11_154722_create_loss_reports_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/police/loss_reports/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/police/layout/police.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/police/layout/police.blade.php" afterDir="false" />
+    <list default="true" id="637d2deb-9e0f-4924-89fd-4d6288848bd1" name="Default Changelist" comment="Loss report form">
+      <change beforePath="$PROJECT_DIR$/resources/views/police/loss_reports/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/police/loss_reports/create.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -231,7 +226,7 @@
       <workItem from="1620111351917" duration="25103000" />
       <workItem from="1620199374654" duration="20666000" />
       <workItem from="1620376377104" duration="9535000" />
-      <workItem from="1620747014759" duration="4666000" />
+      <workItem from="1620747014759" duration="5016000" />
     </task>
     <task id="LOCAL-00001" summary="Bootstrap initialization">
       <created>1619854981682</created>
@@ -408,7 +403,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620747730504</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="Loss report form">
+      <created>1620751768824</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1620751768824</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -428,7 +430,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Migrations" />
     <MESSAGE value="Database full setup" />
     <MESSAGE value="login form" />
     <MESSAGE value="registration form" />
@@ -453,7 +454,8 @@
     <MESSAGE value="Police view reports" />
     <MESSAGE value="Route redirects" />
     <MESSAGE value="Home route authentication middleware" />
-    <option name="LAST_COMMIT_MESSAGE" value="Home route authentication middleware" />
+    <MESSAGE value="Loss report form" />
+    <option name="LAST_COMMIT_MESSAGE" value="Loss report form" />
   </component>
   <component name="WindowStateProjectService">
     <state x="847" y="371" key="#File_Watchers" timestamp="1619945591772">
@@ -516,10 +518,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="377" y="66" key="SettingsEditor/557.1080.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1620283761798" />
-    <state x="552" y="268" key="Vcs.Push.Dialog.v2" timestamp="1620384996295">
+    <state x="552" y="268" key="Vcs.Push.Dialog.v2" timestamp="1620751773799">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="552" y="268" key="Vcs.Push.Dialog.v2/557.1080.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1620384996295" />
+    <state x="552" y="268" key="Vcs.Push.Dialog.v2/557.1080.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1620751773799" />
     <state x="777" y="449" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1620383618697">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>

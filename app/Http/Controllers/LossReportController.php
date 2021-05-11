@@ -74,7 +74,7 @@ class LossReportController extends Controller
             'phoneNumber2' => $request->input('phoneNumber2'),
         ]);
 
-        return Redirect::route('police.loss-report.create')->with('status', 'Report created!');
+        return Redirect::route('user.loss-report.create')->with('status', 'Report created!');
     }
 
     /**

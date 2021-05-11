@@ -173,22 +173,23 @@ Route::prefix('police')->group(function (){
                 ->name("admin.station.destroy");
         });
 
-        Route::prefix('/loss-report')->group(function (){
-
-            Route::get('/create',[LossReportController::class,'create'])
-                ->name("police.loss-report.create");
-
-            Route::get('/all',[LossReportController::class,'index'])
-                ->name("police.loss-report.index");
-
-            Route::post('',[LossReportController::class,'store'])
-                ->name("police.loss-report.store");
-
-            Route::delete('/{id}',[LossReportController::class,'destroy'])
-                ->name("admin.station.destroy");
-        });
-
     });
+});
+
+
+Route::prefix('/loss-report')->group(function (){
+
+    Route::get('/create',[LossReportController::class,'create'])
+        ->name("user.loss-report.create");
+
+    Route::get('/all',[LossReportController::class,'index'])
+        ->name("user.loss-report.index");
+
+    Route::post('',[LossReportController::class,'store'])
+        ->name("user.loss-report.store");
+
+    Route::delete('/{id}',[LossReportController::class,'destroy'])
+        ->name("admin.station.destroy");
 });
 
 //  HEAD OF STATION

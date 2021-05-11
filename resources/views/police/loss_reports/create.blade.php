@@ -1,6 +1,6 @@
-@extends('police.layout.police')
+@extends('layouts.app')
 
-@section('police')
+@section('content')
     <div class="pt-2 px-4">
         <h4>LOSS REPORT</h4>
         <span>Please enter details for new report</span>
@@ -8,7 +8,7 @@
     <div class="card mx-4 my-4">
 
         <div class="card-body px-4">
-            <form class="my-4" method="POST" action="{{ route('police.loss-report.store') }}">
+            <form class="my-4" method="POST" action="{{ route('user.loss-report.store') }}">
                 @csrf
                 <h5 class="font-weight-bold mt-3">Personal Information</h5>
                 <hr>
