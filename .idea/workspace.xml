@@ -13,8 +13,13 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="637d2deb-9e0f-4924-89fd-4d6288848bd1" name="Default Changelist" comment="Route redirects">
+    <list default="true" id="637d2deb-9e0f-4924-89fd-4d6288848bd1" name="Default Changelist" comment="Home route authentication middleware">
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/LossReportController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Models/LossReport.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2021_05_11_154722_create_loss_reports_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/police/loss_reports/create.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/police/layout/police.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/police/layout/police.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -226,7 +231,7 @@
       <workItem from="1620111351917" duration="25103000" />
       <workItem from="1620199374654" duration="20666000" />
       <workItem from="1620376377104" duration="9535000" />
-      <workItem from="1620747014759" duration="285000" />
+      <workItem from="1620747014759" duration="4666000" />
     </task>
     <task id="LOCAL-00001" summary="Bootstrap initialization">
       <created>1619854981682</created>
@@ -396,7 +401,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620384990419</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="Home route authentication middleware">
+      <created>1620747730504</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1620747730504</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -416,7 +428,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Bootstrap initialization" />
     <MESSAGE value="Migrations" />
     <MESSAGE value="Database full setup" />
     <MESSAGE value="login form" />
@@ -441,7 +452,8 @@
     <MESSAGE value="Admin view cases" />
     <MESSAGE value="Police view reports" />
     <MESSAGE value="Route redirects" />
-    <option name="LAST_COMMIT_MESSAGE" value="Route redirects" />
+    <MESSAGE value="Home route authentication middleware" />
+    <option name="LAST_COMMIT_MESSAGE" value="Home route authentication middleware" />
   </component>
   <component name="WindowStateProjectService">
     <state x="847" y="371" key="#File_Watchers" timestamp="1619945591772">
@@ -464,10 +476,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="690" y="286" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/557.1080.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1619941303782" />
-    <state x="690" y="294" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1620383600636">
+    <state x="690" y="294" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1620750154284">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="690" y="294" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/557.1080.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1620383600636" />
+    <state x="690" y="294" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/557.1080.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1620750154284" />
     <state x="627" y="317" key="EditFileWatcherDialog" timestamp="1619945575536">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -516,9 +528,9 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="615" y="250" key="run.anything.popup/557.1080.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1620116929570" />
-    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup" timestamp="1620384725576">
+    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup" timestamp="1620748402363">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup/557.1080.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1620384725576" />
+    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup/557.1080.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1620748402363" />
   </component>
 </project>

@@ -1,11 +1,13 @@
 <?php
 
 use App\Http\Controllers\CaseController;
+use App\Http\Controllers\LossReportController;
 use App\Http\Controllers\PoliceController;
 use App\Http\Controllers\ReportController;
 use App\Http\Controllers\StationsController;
 use App\Models\Cases;
 use App\Models\Complaints;
+use App\Models\LossReport;
 use App\Models\Stations;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -167,8 +169,22 @@ Route::prefix('police')->group(function (){
                 ]);
             })->name('police.report.show');
 
-
             Route::delete('/{id}',[ReportController::class,'destroy'])
+                ->name("admin.station.destroy");
+        });
+
+        Route::prefix('/loss-report')->group(function (){
+
+            Route::get('/create',[LossReportController::class,'create'])
+                ->name("police.loss-report.create");
+
+            Route::get('/all',[LossReportController::class,'index'])
+                ->name("police.loss-report.index");
+
+            Route::post('',[LossReportController::class,'store'])
+                ->name("police.loss-report.store");
+
+            Route::delete('/{id}',[LossReportController::class,'destroy'])
                 ->name("admin.station.destroy");
         });
 
