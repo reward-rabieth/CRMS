@@ -50,7 +50,7 @@ Route::get('/', function () {
     if ($json_decode[0]['role'] == "POLICE") {
         return Redirect::route("police.report.create");
     }
-});
+})->middleware('auth');
 
 Auth::routes();
 /*
