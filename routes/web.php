@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\CaseController;
+use App\Http\Controllers\CriminalAnalysisController;
 use App\Http\Controllers\LossReportController;
 use App\Http\Controllers\PoliceController;
 use App\Http\Controllers\ReportController;
@@ -176,7 +177,6 @@ Route::prefix('police')->group(function (){
     });
 });
 
-
 Route::prefix('/loss-report')->group(function (){
 
     Route::get('/create',[LossReportController::class,'create'])
@@ -190,6 +190,19 @@ Route::prefix('/loss-report')->group(function (){
 
     Route::delete('/{id}',[LossReportController::class,'destroy'])
         ->name("admin.station.destroy");
+});
+
+Route::prefix('/criminal-analysis')->group(function (){
+
+    Route::get('/create',[CriminalAnalysisController::class,'create'])
+        ->name("criminal-analysis.create");
+
+    Route::get('/all',[CriminalAnalysisController::class,'index'])
+        ->name("criminal-analysis.index");
+
+    Route::post('',[CriminalAnalysisController::class,'store'])
+        ->name("criminal-analysis.store");
+
 });
 
 //  HEAD OF STATION
@@ -222,7 +235,6 @@ Route::prefix('hos')->group(function (){
 
             Route::delete('/{id}',[ReportController::class,'destroy'])
                 ->name("hos.report.destroy");
-
         });
 
     //    Police routes

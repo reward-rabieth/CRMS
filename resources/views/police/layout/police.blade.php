@@ -15,6 +15,27 @@
             </ul>
         </div>
 
+        <a href="{{ route("criminal-analysis.create") }}">
+            <div class="nav-item">
+                <ion-icon name="analytics-outline"></ion-icon>
+                CRIMINAL ANALYSIS
+            </div>
+            <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                @csrf
+            </form>
+        </a>
+
+
+        <a href="{{ route("criminal-analysis.create") }}">
+            <div class="nav-item">
+                <ion-icon name="analytics-outline"></ion-icon>
+                BAIL PROCESSING
+            </div>
+            <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                @csrf
+            </form>
+        </a>
+
         <a href="{{ route("logout") }}" onclick="event.preventDefault();
                         document.getElementById('logout-form').submit();">
             <div class="nav-item">
