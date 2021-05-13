@@ -20,5 +20,6 @@ class CriminalAnalysisController extends Controller
         return DB::table('cases')
             ->where('suspectName', 'like', $input)
             ->get();
+
     }
 }

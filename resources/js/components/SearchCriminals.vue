@@ -19,9 +19,11 @@
     </div>
 
     <div v-if="suspects" class="container">
-        <div v-for="suspect in suspects" class="card">
-            <div class="card-body">
-                {{ suspect.suspectName }}
+        <div v-for="suspect in suspects" class="card my-2">
+            <div class="card-body py-1">
+                <strong>Name: </strong>  {{ suspect.suspectName }} |
+                <strong>Status: </strong> {{ suspect.status }} |
+                <strong>Section Law: </strong> {{ suspect.sectionLaw }}
             </div>
         </div>
     </div>
@@ -66,5 +68,8 @@ export default {
 </script>
 
 <style scoped>
-
+.card{
+    cursor: pointer;
+    border-left: 5px solid crimson;
+}
 </style>

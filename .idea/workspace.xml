@@ -14,11 +14,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="637d2deb-9e0f-4924-89fd-4d6288848bd1" name="Default Changelist" comment="Loss report form">
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/CriminalAnalysisController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/police/criminal_analysis/create.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/police/layout/police.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/police/layout/police.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CriminalAnalysisController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CriminalAnalysisController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/components/SearchCriminals.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/SearchCriminals.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -231,6 +230,7 @@
       <workItem from="1620376377104" duration="9535000" />
       <workItem from="1620747014759" duration="6212000" />
       <workItem from="1620816883550" duration="5946000" />
+      <workItem from="1620917875604" duration="3005000" />
     </task>
     <task id="LOCAL-00001" summary="Bootstrap initialization">
       <created>1619854981682</created>
@@ -501,26 +501,26 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="740" y="294" key="FileChooserDialogImpl/557.1080.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1620817409821" />
-    <state width="1875" height="366" key="GridCell.Tab.0.bottom" timestamp="1620823441110">
-      <screen x="0" y="0" width="1366" height="768" />
+    <state width="1875" height="366" key="GridCell.Tab.0.bottom" timestamp="1620927001565">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="1875" height="366" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1620823441110" />
-    <state width="1875" height="366" key="GridCell.Tab.0.bottom/557.1080.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1620819816733" />
-    <state width="1875" height="366" key="GridCell.Tab.0.center" timestamp="1620823441108">
-      <screen x="0" y="0" width="1366" height="768" />
+    <state width="1875" height="366" key="GridCell.Tab.0.bottom/557.1080.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1620927001565" />
+    <state width="1875" height="366" key="GridCell.Tab.0.center" timestamp="1620927001564">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="1875" height="366" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1620823441108" />
-    <state width="1875" height="366" key="GridCell.Tab.0.center/557.1080.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1620819816733" />
-    <state width="1875" height="366" key="GridCell.Tab.0.left" timestamp="1620823441108">
-      <screen x="0" y="0" width="1366" height="768" />
+    <state width="1875" height="366" key="GridCell.Tab.0.center/557.1080.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1620927001564" />
+    <state width="1875" height="366" key="GridCell.Tab.0.left" timestamp="1620927001564">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="1875" height="366" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1620823441108" />
-    <state width="1875" height="366" key="GridCell.Tab.0.left/557.1080.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1620819816733" />
-    <state width="1875" height="366" key="GridCell.Tab.0.right" timestamp="1620823441109">
-      <screen x="0" y="0" width="1366" height="768" />
+    <state width="1875" height="366" key="GridCell.Tab.0.left/557.1080.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1620927001564" />
+    <state width="1875" height="366" key="GridCell.Tab.0.right" timestamp="1620927001564">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="1875" height="366" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1620823441109" />
-    <state width="1875" height="366" key="GridCell.Tab.0.right/557.1080.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1620819816733" />
+    <state width="1875" height="366" key="GridCell.Tab.0.right/557.1080.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1620927001564" />
     <state x="794" y="459" key="NewPhpFileDialog" timestamp="1620055666616">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
