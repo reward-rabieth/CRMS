@@ -21,6 +21,7 @@ window.Vue = require('vue').default;
 Vue.component('delete', require('./components/DeleteButton').default);
 Vue.component('update', require('./components/UpdateButton').default);
 Vue.component('search-criminals', require('./components/SearchCriminals').default);
+Vue.component('bail-component', require('./components/Bail').default);
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to

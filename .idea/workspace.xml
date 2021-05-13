@@ -13,11 +13,18 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="637d2deb-9e0f-4924-89fd-4d6288848bd1" name="Default Changelist" comment="Loss report form">
+    <list default="true" id="637d2deb-9e0f-4924-89fd-4d6288848bd1" name="Default Changelist" comment="Search Criminals">
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/BailController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Models/Bail.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2021_05_13_181055_create_bails_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/components/Bail.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/police/bail/create.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/police/bail/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CriminalAnalysisController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CriminalAnalysisController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/components/SearchCriminals.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/SearchCriminals.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/police/layout/police.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/police/layout/police.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -230,7 +237,7 @@
       <workItem from="1620376377104" duration="9535000" />
       <workItem from="1620747014759" duration="6212000" />
       <workItem from="1620816883550" duration="5946000" />
-      <workItem from="1620917875604" duration="3005000" />
+      <workItem from="1620917875604" duration="6904000" />
     </task>
     <task id="LOCAL-00001" summary="Bootstrap initialization">
       <created>1619854981682</created>
@@ -421,7 +428,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620752348407</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="Search Criminals">
+      <created>1620928169126</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1620928169126</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -441,7 +455,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Database full setup" />
     <MESSAGE value="login form" />
     <MESSAGE value="registration form" />
     <MESSAGE value="Login form complete" />
@@ -466,7 +479,8 @@
     <MESSAGE value="Route redirects" />
     <MESSAGE value="Home route authentication middleware" />
     <MESSAGE value="Loss report form" />
-    <option name="LAST_COMMIT_MESSAGE" value="Loss report form" />
+    <MESSAGE value="Search Criminals" />
+    <option name="LAST_COMMIT_MESSAGE" value="Search Criminals" />
   </component>
   <component name="WindowStateProjectService">
     <state x="847" y="371" key="#File_Watchers" timestamp="1619945591772">
@@ -497,10 +511,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="627" y="317" key="EditFileWatcherDialog/557.1080.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1619945575536" />
-    <state x="740" y="294" key="FileChooserDialogImpl" timestamp="1620817409821">
+    <state x="740" y="294" key="FileChooserDialogImpl" timestamp="1620930617832">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="740" y="294" key="FileChooserDialogImpl/557.1080.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1620817409821" />
+    <state x="740" y="294" key="FileChooserDialogImpl/557.1080.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1620930617832" />
     <state width="1875" height="366" key="GridCell.Tab.0.bottom" timestamp="1620927001565">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -541,14 +555,14 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="777" y="449" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/557.1080.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1620383618697" />
-    <state x="615" y="250" key="run.anything.popup" timestamp="1620116929570">
+    <state x="615" y="250" key="run.anything.popup" timestamp="1620930435379">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="615" y="250" key="run.anything.popup/557.1080.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1620116929570" />
-    <state x="443" y="167" width="672" height="483" key="search.everywhere.popup" timestamp="1620822261468">
-      <screen x="0" y="0" width="1366" height="768" />
+    <state x="615" y="250" key="run.anything.popup/557.1080.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1620930435379" />
+    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup" timestamp="1620931544575">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="443" y="167" width="672" height="483" key="search.everywhere.popup/0.0.1366.768@0.0.1366.768" timestamp="1620822261468" />
-    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup/557.1080.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1620819343359" />
+    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup/557.1080.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1620931544575" />
   </component>
 </project>

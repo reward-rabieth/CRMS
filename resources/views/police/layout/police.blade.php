@@ -25,8 +25,7 @@
             </form>
         </a>
 
-
-        <a href="{{ route("criminal-analysis.create") }}">
+        <a href="{{ route("police.bail.index") }}">
             <div class="nav-item">
                 <ion-icon name="analytics-outline"></ion-icon>
                 BAIL PROCESSING
