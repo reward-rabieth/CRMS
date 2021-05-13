@@ -13,17 +13,12 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="637d2deb-9e0f-4924-89fd-4d6288848bd1" name="Default Changelist" comment="Search Criminals">
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/BailController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/Bail.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2021_05_13_181055_create_bails_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/components/Bail.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/police/bail/create.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/police/bail/index.blade.php" afterDir="false" />
+    <list default="true" id="637d2deb-9e0f-4924-89fd-4d6288848bd1" name="Default Changelist" comment="Bail processing">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/police/layout/police.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/police/layout/police.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/BailController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/BailController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CriminalAnalysisController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CriminalAnalysisController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2021_05_13_181055_create_bails_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_05_13_181055_create_bails_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/police/bail/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/police/bail/create.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -237,7 +232,7 @@
       <workItem from="1620376377104" duration="9535000" />
       <workItem from="1620747014759" duration="6212000" />
       <workItem from="1620816883550" duration="5946000" />
-      <workItem from="1620917875604" duration="6904000" />
+      <workItem from="1620917875604" duration="9507000" />
     </task>
     <task id="LOCAL-00001" summary="Bootstrap initialization">
       <created>1619854981682</created>
@@ -435,7 +430,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620928169126</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="Bail processing">
+      <created>1620932238590</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1620932238590</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -455,7 +457,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="login form" />
     <MESSAGE value="registration form" />
     <MESSAGE value="Login form complete" />
     <MESSAGE value="Role User Seeder" />
@@ -480,7 +481,8 @@
     <MESSAGE value="Home route authentication middleware" />
     <MESSAGE value="Loss report form" />
     <MESSAGE value="Search Criminals" />
-    <option name="LAST_COMMIT_MESSAGE" value="Search Criminals" />
+    <MESSAGE value="Bail processing" />
+    <option name="LAST_COMMIT_MESSAGE" value="Bail processing" />
   </component>
   <component name="WindowStateProjectService">
     <state x="847" y="371" key="#File_Watchers" timestamp="1619945591772">
@@ -503,10 +505,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="690" y="286" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/557.1080.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1619941303782" />
-    <state x="690" y="294" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1620750154284">
+    <state x="690" y="294" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1620932446240">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="690" y="294" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/557.1080.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1620750154284" />
+    <state x="690" y="294" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/557.1080.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1620932446240" />
     <state x="627" y="317" key="EditFileWatcherDialog" timestamp="1619945575536">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -559,10 +561,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="615" y="250" key="run.anything.popup/557.1080.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1620930435379" />
-    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup" timestamp="1620931544575">
+    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup" timestamp="1620934175398">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="443" y="167" width="672" height="483" key="search.everywhere.popup/0.0.1366.768@0.0.1366.768" timestamp="1620822261468" />
-    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup/557.1080.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1620931544575" />
+    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup/557.1080.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1620934175398" />
   </component>
 </project>

@@ -174,13 +174,14 @@ Route::prefix('police')->group(function (){
             Route::delete('/{id}',[ReportController::class,'destroy'])
                 ->name("admin.station.destroy");
         });
+
         Route::prefix('/bail')->group(function (){
 
             Route::get('/index',[BailController::class,'index'])->name("police.bail.index");
 
             Route::get('{id}/create',[BailController::class,'create'])->name("police.bail.create");
 
-            Route::post('',[ReportController::class,'store'])
+            Route::post('{id}',[BailController::class,'store'])
                 ->name("police.bail.store");
 
             Route::delete('/{id}',[ReportController::class,'destroy'])

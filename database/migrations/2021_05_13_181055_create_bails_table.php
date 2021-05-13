@@ -15,6 +15,15 @@ class CreateBailsTable extends Migration
     {
         Schema::create('bails', function (Blueprint $table) {
             $table->id();
+            $table->string('name');
+            $table->string('gender');
+            $table->string('nid');
+            $table->string('occupation');
+            $table->string('phoneNumber');
+            $table->string('relationship');
+            $table->string('address');
+            $table->string('amount');
+            $table->string('status')->default('pending');
             $table->timestamps();
         });
     }
