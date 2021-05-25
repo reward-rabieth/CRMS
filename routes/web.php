@@ -418,7 +418,7 @@ Route::prefix('ag')->group(function (){
                 return view('ag.cases.index',[
                     'cases'=>Cases::all()
                 ]);
-            })->name("ag.case.index");
+            })->name("ag.case.all");
 
             Route::get('/{id}',function ($id) {
                 $case = DB::table('cases')

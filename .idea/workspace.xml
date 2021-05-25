@@ -13,12 +13,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="637d2deb-9e0f-4924-89fd-4d6288848bd1" name="Default Changelist" comment="Bail processing">
+    <list default="true" id="637d2deb-9e0f-4924-89fd-4d6288848bd1" name="Default Changelist" comment="Create bail">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/BailController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/BailController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CriminalAnalysisController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CriminalAnalysisController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2021_05_13_181055_create_bails_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_05_13_181055_create_bails_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/police/bail/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/police/bail/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/ag/layout/ag.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/ag/layout/ag.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -164,7 +161,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js.last.introduce.type" value="LET" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/police/reports" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../menstrual-tracker" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
     <property name="vue.rearranger.settings.migration" value="true" />
@@ -232,7 +229,12 @@
       <workItem from="1620376377104" duration="9535000" />
       <workItem from="1620747014759" duration="6212000" />
       <workItem from="1620816883550" duration="5946000" />
-      <workItem from="1620917875604" duration="9507000" />
+      <workItem from="1620917875604" duration="10245000" />
+      <workItem from="1620984262937" duration="1232000" />
+      <workItem from="1621600536433" duration="1270000" />
+      <workItem from="1621855295064" duration="1208000" />
+      <workItem from="1621929808209" duration="384000" />
+      <workItem from="1621951052619" duration="2145000" />
     </task>
     <task id="LOCAL-00001" summary="Bootstrap initialization">
       <created>1619854981682</created>
@@ -437,7 +439,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620932238590</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="Create bail">
+      <created>1620934624507</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1620934624507</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -457,7 +466,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="registration form" />
     <MESSAGE value="Login form complete" />
     <MESSAGE value="Role User Seeder" />
     <MESSAGE value="User Seeder Password hashing" />
@@ -482,7 +490,8 @@
     <MESSAGE value="Loss report form" />
     <MESSAGE value="Search Criminals" />
     <MESSAGE value="Bail processing" />
-    <option name="LAST_COMMIT_MESSAGE" value="Bail processing" />
+    <MESSAGE value="Create bail" />
+    <option name="LAST_COMMIT_MESSAGE" value="Create bail" />
   </component>
   <component name="WindowStateProjectService">
     <state x="847" y="371" key="#File_Watchers" timestamp="1619945591772">
@@ -513,10 +522,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="627" y="317" key="EditFileWatcherDialog/557.1080.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1619945575536" />
-    <state x="740" y="294" key="FileChooserDialogImpl" timestamp="1620930617832">
+    <state x="668" y="203" key="FileChooserDialogImpl" timestamp="1621930201777">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="740" y="294" key="FileChooserDialogImpl/557.1080.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1620930617832" />
+    <state x="668" y="203" key="FileChooserDialogImpl/557.1080.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1621930201777" />
     <state width="1875" height="366" key="GridCell.Tab.0.bottom" timestamp="1620927001565">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -549,10 +558,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="377" y="66" key="SettingsEditor/557.1080.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1620283761798" />
-    <state x="552" y="268" key="Vcs.Push.Dialog.v2" timestamp="1620752401055">
+    <state x="552" y="268" key="Vcs.Push.Dialog.v2" timestamp="1620934630842">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="552" y="268" key="Vcs.Push.Dialog.v2/557.1080.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1620752401055" />
+    <state x="552" y="268" key="Vcs.Push.Dialog.v2/557.1080.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1620934630842" />
     <state x="777" y="449" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1620383618697">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -561,10 +570,11 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="615" y="250" key="run.anything.popup/557.1080.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1620930435379" />
-    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup" timestamp="1620934175398">
+    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup" timestamp="1621964031291">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="443" y="167" width="672" height="483" key="search.everywhere.popup/0.0.1366.768@0.0.1366.768" timestamp="1620822261468" />
+    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup/543.1080.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1621964031291" />
     <state x="623" y="235" width="672" height="678" key="search.everywhere.popup/557.1080.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1620934175398" />
   </component>
 </project>
