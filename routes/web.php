@@ -43,10 +43,10 @@ Route::get('/', function () {
         return Redirect::route("admin.station.create");
     }
     if ($json_decode[0]['role'] == "INVESTIGATOR") {
-        return Redirect::route("investigator.report.all");
+        return Redirect::route("investigator.report.index");
     }
     if ($json_decode[0]['role'] == "HOS") {
-        return Redirect::route("hos.report.all");
+        return Redirect::route("hos.report.index");
     }
     if ($json_decode[0]['role'] == "AG") {
         return Redirect::route("ag.cases.all");

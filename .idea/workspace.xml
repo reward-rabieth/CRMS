@@ -13,9 +13,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="637d2deb-9e0f-4924-89fd-4d6288848bd1" name="Default Changelist" comment="Ag cases fix">
+    <list default="true" id="637d2deb-9e0f-4924-89fd-4d6288848bd1" name="Default Changelist" comment="Investigator fix">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,6 +34,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -238,7 +245,7 @@
       <workItem from="1622378560398" duration="591000" />
       <workItem from="1623528258730" duration="823000" />
       <workItem from="1623566404849" duration="12000" />
-      <workItem from="1623829648478" duration="570000" />
+      <workItem from="1623829648478" duration="1621000" />
     </task>
     <task id="LOCAL-00001" summary="Bootstrap initialization">
       <created>1619854981682</created>
@@ -457,7 +464,14 @@
       <option name="project" value="LOCAL" />
       <updated>1621964182230</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="Investigator fix">
+      <created>1623830268103</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1623830268103</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -477,8 +491,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Role User Seeder" />
-    <MESSAGE value="User Seeder Password hashing" />
     <MESSAGE value="Admin routes" />
     <MESSAGE value="sidebar nav" />
     <MESSAGE value="Update investigator" />
@@ -502,92 +514,8 @@
     <MESSAGE value="Bail processing" />
     <MESSAGE value="Create bail" />
     <MESSAGE value="Ag cases fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ag cases fix" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="847" y="371" key="#File_Watchers" timestamp="1619945591772">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state x="847" y="371" key="#File_Watchers/557.1080.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1619945591772" />
-    <state x="586" y="218" key="#Inspections" timestamp="1619953946559">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state x="586" y="218" key="#Inspections/557.1080.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1619953946559" />
-    <state x="764" y="208" key="#com.intellij.ide.util.MemberChooser" timestamp="1620114206556">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state x="764" y="208" key="#com.intellij.ide.util.MemberChooser/557.1080.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1620114206556" />
-    <state x="715" y="80" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1619962349998">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state x="715" y="80" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/557.1080.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1619962349998" />
-    <state x="690" y="286" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1619941303782">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state x="690" y="286" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/557.1080.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1619941303782" />
-    <state x="690" y="294" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1620932446240">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state x="690" y="294" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/557.1080.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1620932446240" />
-    <state x="627" y="317" key="EditFileWatcherDialog" timestamp="1619945575536">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state x="627" y="317" key="EditFileWatcherDialog/557.1080.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1619945575536" />
-    <state x="475" y="144" key="FileChooserDialogImpl" timestamp="1622379553563">
-      <screen x="0" y="0" width="1366" height="768" />
-    </state>
-    <state x="475" y="144" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1622379553563" />
-    <state x="668" y="203" key="FileChooserDialogImpl/557.1080.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1621930201777" />
-    <state width="1875" height="366" key="GridCell.Tab.0.bottom" timestamp="1620927001565">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state width="1875" height="366" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1620823441110" />
-    <state width="1875" height="366" key="GridCell.Tab.0.bottom/557.1080.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1620927001565" />
-    <state width="1875" height="366" key="GridCell.Tab.0.center" timestamp="1620927001564">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state width="1875" height="366" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1620823441108" />
-    <state width="1875" height="366" key="GridCell.Tab.0.center/557.1080.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1620927001564" />
-    <state width="1875" height="366" key="GridCell.Tab.0.left" timestamp="1620927001564">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state width="1875" height="366" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1620823441108" />
-    <state width="1875" height="366" key="GridCell.Tab.0.left/557.1080.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1620927001564" />
-    <state width="1875" height="366" key="GridCell.Tab.0.right" timestamp="1620927001564">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state width="1875" height="366" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1620823441109" />
-    <state width="1875" height="366" key="GridCell.Tab.0.right/557.1080.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1620927001564" />
-    <state x="794" y="459" key="NewPhpFileDialog" timestamp="1620055666616">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state x="794" y="459" key="NewPhpFileDialog/557.1080.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1620055666616" />
-    <state x="807" y="176" key="RollbackChangesDialog" timestamp="1620061329930">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state x="807" y="176" key="RollbackChangesDialog/557.1080.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1620061329930" />
-    <state x="377" y="66" key="SettingsEditor" timestamp="1620283761798">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state x="377" y="66" key="SettingsEditor/557.1080.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1620283761798" />
-    <state x="552" y="268" key="Vcs.Push.Dialog.v2" timestamp="1621964190157">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state x="552" y="268" key="Vcs.Push.Dialog.v2/543.1080.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1621964190157" />
-    <state x="552" y="268" key="Vcs.Push.Dialog.v2/557.1080.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1620934630842" />
-    <state x="777" y="449" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1620383618697">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state x="777" y="449" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/557.1080.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1620383618697" />
-    <state x="615" y="250" key="run.anything.popup" timestamp="1620930435379">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state x="615" y="250" key="run.anything.popup/557.1080.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1620930435379" />
-    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup" timestamp="1622304948939">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state x="443" y="167" width="672" height="483" key="search.everywhere.popup/0.0.1366.768@0.0.1366.768" timestamp="1620822261468" />
-    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup/543.1080.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1622304948939" />
-    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup/557.1080.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1620934175398" />
+    <MESSAGE value="Inestigator fix" />
+    <MESSAGE value="Investigator fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="Investigator fix" />
   </component>
 </project>
