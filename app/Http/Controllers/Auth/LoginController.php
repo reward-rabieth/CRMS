@@ -63,7 +63,6 @@ class LoginController extends Controller
             if ($json_decode[0]['role'] == "POLICE") {
                 return "/police/report/create";
             }
-
     }
 
     /**
