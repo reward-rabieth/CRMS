@@ -11,6 +11,7 @@ use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Redirect;
+use Intervention\Image\Facades\Image;
 
 class ReportController extends Controller
 {
@@ -136,11 +137,22 @@ class ReportController extends Controller
         //
     }
 
-    public function status(Request $request, $id) {
+    public function status(Request $request, $id): RedirectResponse
+    {
         // Validate input
         $request->validate([
             'remarks' => 'required|max:500',
         ]);
+
+        if (!is_null("file")){
+            // Get image path
+            // TODO: Make the image path unique
+            $imagePath = request('file')->store('uploads/files', 'public');
+
+            //Resize & store Image
+            $image = Image::make("storage/{$imagePath}")->fit(1200,1200);
+            $image->save();
+        }
 
         if ($request->input('status') == "approve"){
 //            Update report
@@ -148,6 +160,7 @@ class ReportController extends Controller
                 ->where('id', '=', $id)
                 ->update([
                     'status' => 'Approved',
+                    'image_path' => $imagePath,
                     'remarks' => $request->input('remarks')
                 ]);
 
@@ -162,6 +175,7 @@ class ReportController extends Controller
                     'report_id' => $id,
                     'remarks' => $request->input('remarks'),
                     'suspectName' => $report->defendantName,
+                    'image_path' => $imagePath,
                     'investigation_officer' => auth()->id()
                 ]);
         }else{
@@ -169,6 +183,7 @@ class ReportController extends Controller
                 ->where('id', '=', $id)
                 ->update([
                     'status' => 'Denied',
+                    'image_path' => $imagePath,
                     'remarks' => $request->input('remarks')
                 ]);
         }

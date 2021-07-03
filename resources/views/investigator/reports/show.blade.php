@@ -92,7 +92,6 @@
                     </div >
                 </div>
 
-
                 @if (session('status'))
                     <div class="alert alert-success my-2">
                         {{ session('status') }}
@@ -100,11 +99,19 @@
                 @endif
 
                <div class=" my-2">
-                   <form method="post" action="{{ route('investigator.report.put',$complaint->id) }}">
+                   <form method="post" action="{{ route('investigator.report.put',$complaint->id) }}" enctype="multipart/form-data">
                        <div class="mb-3">
-                           <label for="report" class="form-label">Remarks</label>
-                           <textarea class="form-control @error('report') is-invalid @enderror"  name="remarks" id="remarks" rows="5" placeholder="Investigator remarks">{{ old('remarks') }}</textarea>
+                           <label for="report" class="form-label">Feedback</label>
+                           <textarea class="form-control @error('report') is-invalid @enderror"  name="remarks" id="remarks" rows="5" placeholder="Investigator feedback">{{ old('remarks') }}</textarea>
+
                            @error('remarks')
+                           <div class="alert alert-danger">{{ $message }}</div>
+                           @enderror
+                       </div>
+                       <div class="mb-3">
+                           <label for="formFileMultiple" class="form-label">Choose Image to upload</label>
+                           <input class="form-control @error('file') is-invalid @enderror" name="file" type="file" id="formFileMultiple"/>
+                           @error('file')
                            <div class="alert alert-danger">{{ $message }}</div>
                            @enderror
                        </div>
