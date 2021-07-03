@@ -144,6 +144,8 @@ class ReportController extends Controller
             'remarks' => 'required|max:500',
         ]);
 
+        $imagePath = null;
+
         if (!is_null("file")){
             // Get image path
             // TODO: Make the image path unique

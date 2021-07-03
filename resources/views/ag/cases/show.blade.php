@@ -106,14 +106,11 @@
                         ->get();
 
                 @endphp
-
                 <div class="row my-4">
                     <div class="col bg-info">
                         <h4 class="mt-2 font-weight-bold">Fill the form:</h4>
                     </div>
                 </div>
-
-
 
                 <div class=" my-2">
                     <form method="post" action="{{ route('ag.case.put',$case->caseNumber) }}">

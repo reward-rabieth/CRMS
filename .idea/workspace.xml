@@ -13,9 +13,14 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="637d2deb-9e0f-4924-89fd-4d6288848bd1" name="Default Changelist" comment="Upload files">
+    <list default="true" id="637d2deb-9e0f-4924-89fd-4d6288848bd1" name="Default Changelist" comment="AG view files">
+      <change afterPath="$PROJECT_DIR$/database/migrations/2021_07_03_083828_add_reference-letter_to_bails.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/BailController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/BailController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ReportController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ReportController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/ag/cases/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/ag/cases/show.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/investigator/reports/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/investigator/reports/show.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/police/bail/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/police/bail/create.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -250,7 +255,7 @@
       <workItem from="1623566404849" duration="12000" />
       <workItem from="1623829648478" duration="2537000" />
       <workItem from="1625294327068" duration="5000000" />
-      <workItem from="1625300321811" duration="306000" />
+      <workItem from="1625300321811" duration="1477000" />
     </task>
     <task id="LOCAL-00001" summary="Bootstrap initialization">
       <created>1619854981682</created>
@@ -490,7 +495,14 @@
       <option name="project" value="LOCAL" />
       <updated>1625298643105</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="AG view files">
+      <created>1625300815042</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1625300815042</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -510,7 +522,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Update investigator" />
     <MESSAGE value="Create case" />
     <MESSAGE value="Show cases to ag" />
     <MESSAGE value="send case to court" />
@@ -535,6 +546,7 @@
     <MESSAGE value="Investigator fix" />
     <MESSAGE value="Route fix" />
     <MESSAGE value="Upload files" />
-    <option name="LAST_COMMIT_MESSAGE" value="Upload files" />
+    <MESSAGE value="AG view files" />
+    <option name="LAST_COMMIT_MESSAGE" value="AG view files" />
   </component>
 </project>

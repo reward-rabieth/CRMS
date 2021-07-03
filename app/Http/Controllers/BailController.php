@@ -6,6 +6,7 @@ use App\Models\Cases;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Redirect;
+use Intervention\Image\Facades\Image;
 use function PHPUnit\Framework\isEmpty;
 
 class BailController extends Controller
@@ -29,6 +30,18 @@ class BailController extends Controller
             'amount' => 'required|Integer',
         ]);
 
+        $imagePath = null;
+
+        if (!is_null("reference-letter")){
+            // Get image path
+            // TODO: Make the image path unique
+            $imagePath = request('reference-letter')->store('uploads/files', 'public');
+
+            //Resize & store Image
+            $image = Image::make("storage/{$imagePath}")->fit(1200,1200);
+            $image->save();
+        }
+
         $first = Cases::where('suspectName', $request->input('name'))->first();
 
 
@@ -42,6 +55,7 @@ class BailController extends Controller
                 'phoneNumber' => $request->input('phoneNumber'),
                 'relationship' => $request->input('relationship'),
                 'address' => $request->input('address'),
+                'reference_letter' => $imagePath,
                 'amount' => $request->input('amount')
             ]);
 
@@ -57,6 +71,7 @@ class BailController extends Controller
         $case = DB::table('cases')
             ->where('caseNumber','=',$id)
             ->first();
+
         return view('police.bail.create',[
             'case'=>$case
         ]);

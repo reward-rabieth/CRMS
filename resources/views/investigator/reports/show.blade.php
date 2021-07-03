@@ -108,6 +108,7 @@
                            <div class="alert alert-danger">{{ $message }}</div>
                            @enderror
                        </div>
+
                        <div class="mb-3">
                            <label for="formFileMultiple" class="form-label">Choose Image to upload</label>
                            <input class="form-control @error('file') is-invalid @enderror" name="file" type="file" id="formFileMultiple"/>

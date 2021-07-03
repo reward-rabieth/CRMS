@@ -7,7 +7,7 @@
 
         <h5 class="text-center">OBLIGATOR INFORMATION</h5>
 
-        <form action="{{ route('police.bail.store', $case->caseNumber) }}" method="post">
+        <form action="{{ route('police.bail.store', $case->caseNumber) }}" method="post" enctype="multipart/form-data">
             @csrf
             <div class="row">
                 <div class="col">
@@ -89,6 +89,16 @@
                         <div class="alert alert-danger">{{ $message }}</div>
                         @enderror
                     </div>
+                </div>
+            </div>
+
+            <div class="mb-3 row">
+                <div class="col-6">
+                    <label for="formFileMultiple" class="form-label">Reference letter</label>
+                    <input class="form-control @error('reference-letter') is-invalid @enderror" name="reference-letter" type="file" id="formFileMultiple"/>
+                    @error('reference-letter')
+                    <div class="alert alert-danger">{{ $message }}</div>
+                    @enderror
                 </div>
             </div>
 
