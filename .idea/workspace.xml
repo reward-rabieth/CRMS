@@ -13,18 +13,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="637d2deb-9e0f-4924-89fd-4d6288848bd1" name="Default Changelist" comment="Route fix">
-      <change afterPath="$PROJECT_DIR$/config/image.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2021_07_03_073557_add_image_path_to_cases_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2021_07_03_073623_add_image_path_to_complaints_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/cims.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/cims.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+    <list default="true" id="637d2deb-9e0f-4924-89fd-4d6288848bd1" name="Default Changelist" comment="Upload files">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ReportController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ReportController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/investigator/reports/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/investigator/reports/show.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/ag/cases/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/ag/cases/show.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -258,7 +249,8 @@
       <workItem from="1623528258730" duration="823000" />
       <workItem from="1623566404849" duration="12000" />
       <workItem from="1623829648478" duration="2537000" />
-      <workItem from="1625294327068" duration="4176000" />
+      <workItem from="1625294327068" duration="5000000" />
+      <workItem from="1625300321811" duration="306000" />
     </task>
     <task id="LOCAL-00001" summary="Bootstrap initialization">
       <created>1619854981682</created>
@@ -491,7 +483,14 @@
       <option name="project" value="LOCAL" />
       <updated>1623831534353</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="Upload files">
+      <created>1625298643105</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1625298643105</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -511,7 +510,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="sidebar nav" />
     <MESSAGE value="Update investigator" />
     <MESSAGE value="Create case" />
     <MESSAGE value="Show cases to ag" />
@@ -536,6 +534,7 @@
     <MESSAGE value="Inestigator fix" />
     <MESSAGE value="Investigator fix" />
     <MESSAGE value="Route fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="Route fix" />
+    <MESSAGE value="Upload files" />
+    <option name="LAST_COMMIT_MESSAGE" value="Upload files" />
   </component>
 </project>

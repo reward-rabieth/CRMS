@@ -92,6 +92,9 @@
                     </div >
                 </div>
 
+                <div>
+                    <img class="w-50" src="{{ '/storage/'.$complaint->image_path }}" alt="">
+                </div>
                 @php
                     use Illuminate\Support\Facades\DB;
 
