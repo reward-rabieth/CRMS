@@ -41,6 +41,24 @@
                     @enderror
                 </div>
 
+                @php
+                    use Illuminate\Support\Facades\DB;
+                    $stations = DB::table('stations')
+                                    ->get();
+                @endphp
+                <div class="form-group">
+                    <label for="station_id">Station</label>
+                    <select name="station_id" id="station_id" class="@error('station_id') is-invalid @enderror form-select mb-3 form-select" aria-label=".form-select-sm example">
+                        <option selected disabled>Choose station</option>
+                        @foreach($stations as $station)
+                            <option  value="{{ $station->id }}">{{ $station->name }}</option>
+                        @endforeach
+                    </select>
+                    @error('station_id')
+                        <div class="alert alert-danger">{{ $message }}</div>
+                    @enderror
+                </div>
+
                 @if (session('status'))
                     <div class="alert alert-success my-2">
                         {{ session('status') }}

@@ -57,6 +57,7 @@ class PoliceController extends Controller
             'name' => 'required|max:255',
             'policeId' => 'unique:users,username|required|String',
             'gender' => 'required|String',
+            'station_id' => 'required|String',
             'age' => 'required|Integer'
         ]);
 
@@ -70,6 +71,7 @@ class PoliceController extends Controller
             'username' => $username,
             'password' => $pwd,
             'gender' => $request->input('gender'),
+            'station_id' => $request->input('station_id'),
             'age' => $request->input('age')
         ]);
 

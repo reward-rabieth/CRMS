@@ -18,6 +18,7 @@ class DatabaseSeeder extends Seeder
            UserSeeder::class,
            RolesSeeder::class,
            RoleUserSeeder::class,
+           StationsSeeder::class
         ]);
     }
 }

@@ -13,14 +13,14 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="637d2deb-9e0f-4924-89fd-4d6288848bd1" name="Default Changelist" comment="AG view files">
-      <change afterPath="$PROJECT_DIR$/database/migrations/2021_07_03_083828_add_reference-letter_to_bails.php" afterDir="false" />
+    <list default="true" id="637d2deb-9e0f-4924-89fd-4d6288848bd1" name="Default Changelist" comment="Upload reference letter while bailing">
+      <change afterPath="$PROJECT_DIR$/database/migrations/2021_07_03_144637_add_station_id_to_users.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/seeders/StationsSeeder.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/BailController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/BailController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ReportController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ReportController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/ag/cases/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/ag/cases/show.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/investigator/reports/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/investigator/reports/show.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/police/bail/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/police/bail/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CriminalAnalysisController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CriminalAnalysisController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PoliceController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PoliceController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/police/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/police/create.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -177,17 +177,11 @@
     <property name="js.last.introduce.type" value="LET" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="settings.editor.splitter.proportion" value="0.23751274" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\Projects\final_year\cims\resources\views\components" />
-      <recent name="D:\Projects\final_year\cims\resources\views\admin" />
-      <recent name="D:\Projects\final_year\cims\resources\views\admin\stations" />
-      <recent name="D:\Projects\final_year\cims\public" />
-      <recent name="D:\Projects\final_year\cims\public\assets" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Projects\final_year\cims\resources\views\police\reports" />
       <recent name="D:\Projects\final_year\cims\resources\views\admin" />
@@ -195,8 +189,18 @@
       <recent name="D:\Projects\final_year\cims\resources\views\hos" />
       <recent name="D:\Projects\final_year\cims\resources\views\admin\police" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Projects\final_year\cims\resources\views\components" />
+      <recent name="D:\Projects\final_year\cims\resources\views\admin" />
+      <recent name="D:\Projects\final_year\cims\resources\views\admin\stations" />
+      <recent name="D:\Projects\final_year\cims\public" />
+      <recent name="D:\Projects\final_year\cims\public\assets" />
+    </key>
   </component>
-  <component name="RunManager" selected="npm.dev">
+  <component name="RunManager" selected="JavaScript Debug.127.0.0.1:8000">
+    <configuration name="127.0.0.1:8000" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://127.0.0.1:8000">
+      <method v="2" />
+    </configuration>
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
       <TestRunner scope="XML" />
       <method v="2" />
@@ -223,6 +227,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JavaScript Debug.127.0.0.1:8000" />
         <item itemvalue="npm.watch" />
         <item itemvalue="npm.dev" />
       </list>
@@ -255,7 +260,10 @@
       <workItem from="1623566404849" duration="12000" />
       <workItem from="1623829648478" duration="2537000" />
       <workItem from="1625294327068" duration="5000000" />
-      <workItem from="1625300321811" duration="1477000" />
+      <workItem from="1625300321811" duration="4097000" />
+      <workItem from="1625317985390" duration="1060000" />
+      <workItem from="1625319110531" duration="997000" />
+      <workItem from="1625321494693" duration="2205000" />
     </task>
     <task id="LOCAL-00001" summary="Bootstrap initialization">
       <created>1619854981682</created>
@@ -502,7 +510,14 @@
       <option name="project" value="LOCAL" />
       <updated>1625300815042</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="Upload reference letter while bailing">
+      <created>1625301867157</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1625301867157</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -522,7 +537,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Create case" />
     <MESSAGE value="Show cases to ag" />
     <MESSAGE value="send case to court" />
     <MESSAGE value="Hos dashboard Update" />
@@ -547,6 +561,7 @@
     <MESSAGE value="Route fix" />
     <MESSAGE value="Upload files" />
     <MESSAGE value="AG view files" />
-    <option name="LAST_COMMIT_MESSAGE" value="AG view files" />
+    <MESSAGE value="Upload reference letter while bailing" />
+    <option name="LAST_COMMIT_MESSAGE" value="Upload reference letter while bailing" />
   </component>
 </project>
