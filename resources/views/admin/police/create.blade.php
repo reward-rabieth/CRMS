@@ -3,7 +3,7 @@
 @section('admin')
     <div class="pt-2 px-4">
         <h4>Add new police</h4>
-        <span>Please enter details for new polic</span>
+        <span>Please enter details for new police</span>
         <hr>
     </div>
     <div class="card mx-4 my-4">

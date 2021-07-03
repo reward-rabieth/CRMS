@@ -56,6 +56,20 @@ Route::get('/', function () {
     }
 })->middleware('auth');
 
+
+Route::prefix('/criminal-analysis')->group(function (){
+
+    Route::get('/create',[CriminalAnalysisController::class,'create'])
+        ->name("criminal-analysis.create");
+
+    Route::get('/all',[CriminalAnalysisController::class,'index'])
+        ->name("criminal-analysis.index");
+
+    Route::post('',[CriminalAnalysisController::class,'store'])
+        ->name("criminal-analysis.store");
+
+});
+
 Auth::routes();
 /*
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');*/
@@ -206,18 +220,6 @@ Route::prefix('/loss-report')->group(function (){
         ->name("admin.station.destroy");
 });
 
-Route::prefix('/criminal-analysis')->group(function (){
-
-    Route::get('/create',[CriminalAnalysisController::class,'create'])
-        ->name("criminal-analysis.create");
-
-    Route::get('/all',[CriminalAnalysisController::class,'index'])
-        ->name("criminal-analysis.index");
-
-    Route::post('',[CriminalAnalysisController::class,'store'])
-        ->name("criminal-analysis.store");
-
-});
 
 //  HEAD OF STATION
 Route::prefix('hos')->group(function (){

@@ -14,11 +14,30 @@ class CriminalAnalysisController extends Controller
     public function create() {
         return view('police.criminal_analysis.create');
     }
+
     public function store(Request $request) {
         $input = $request->input('name');
 
-        return DB::table('cases')
+        $collection = DB::table('cases')
             ->where('suspectName', 'like', $input)
             ->get();
+
+        $results = json_decode(json_encode($collection), true);
+
+        $items = collect($results)->map(function ($suspect) {
+            $investigator = DB::table('users')
+                ->where('id', '=', $suspect['investigation_officer'])
+                ->first();
+
+            $station = DB::table('stations')
+                ->where('id',$investigator->station_id)
+                ->first();
+
+            $suspect['investigator'] = $investigator->name;
+            $suspect['station'] = $station->name;
+
+            return $suspect;
+        });
+        return json_decode(json_encode($items));
     }
 }

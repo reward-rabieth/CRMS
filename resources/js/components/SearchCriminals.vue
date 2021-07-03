@@ -23,6 +23,8 @@
             <div class="card-body py-1">
                 <strong>Name: </strong>  {{ suspect.suspectName }} |
                 <strong>Status: </strong> {{ suspect.status }} |
+                <strong>Investigator name: </strong> {{ suspect.investigator }} |
+                <strong>Station: </strong> {{ suspect.station }} |
                 <strong>Section Law: </strong> {{ suspect.sectionLaw }}
             </div>
         </div>
