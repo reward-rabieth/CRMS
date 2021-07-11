@@ -22,7 +22,7 @@ class BailController extends Controller
         $request->validate([
             'name' => 'required|max:255',
             'gender' => 'required|String',
-            'id' => 'required|Integer',
+            'id' => 'required|numeric|min:20',
             'occupation' => 'required|String',
             'phoneNumber' => 'required|Integer',
             'relationship' => 'required|String',

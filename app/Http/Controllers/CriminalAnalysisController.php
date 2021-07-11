@@ -29,6 +29,7 @@ class CriminalAnalysisController extends Controller
                 ->where('id', '=', $suspect['investigation_officer'])
                 ->first();
 
+            // Get the stations from the database by station id from the user id
             $station = DB::table('stations')
                 ->where('id',$investigator->station_id)
                 ->first();

@@ -50,11 +50,11 @@ class ReportController extends Controller
         // Validate input
         $request->validate([
             'complainantName' => 'required|max:255',
-            'complainantNID' => 'required|Integer',
+            'complainantNID' => 'required|numeric|min:20',
             'complainantContacts' => 'required|Integer',
             'complainantAddress' => 'required|String',
             'defendantName' => 'required|String',
-            'defendantNID' => 'required|Integer',
+            'defendantNID' => 'required|numeric|min:20',
             'defendantContacts' => 'required|Integer',
             'defendantAddress' => 'required|String',
             'defendantRelationship' => 'required|String',

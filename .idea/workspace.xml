@@ -13,13 +13,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="637d2deb-9e0f-4924-89fd-4d6288848bd1" name="Default Changelist" comment="Add station id when creating police">
+    <list default="true" id="637d2deb-9e0f-4924-89fd-4d6288848bd1" name="Default Changelist" comment="Criminal analysis display details">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CriminalAnalysisController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CriminalAnalysisController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/components/SearchCriminals.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/SearchCriminals.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/police/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/police/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ReportController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ReportController.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -262,7 +259,9 @@
       <workItem from="1625300321811" duration="4097000" />
       <workItem from="1625317985390" duration="1060000" />
       <workItem from="1625319110531" duration="997000" />
-      <workItem from="1625321494693" duration="4662000" />
+      <workItem from="1625321494693" duration="7847000" />
+      <workItem from="1625512324109" duration="798000" />
+      <workItem from="1626013015559" duration="1274000" />
     </task>
     <task id="LOCAL-00001" summary="Bootstrap initialization">
       <created>1619854981682</created>
@@ -523,7 +522,14 @@
       <option name="project" value="LOCAL" />
       <updated>1625324591480</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="Criminal analysis display details">
+      <created>1625326392142</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1625326392142</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -543,7 +549,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="send case to court" />
     <MESSAGE value="Hos dashboard Update" />
     <MESSAGE value="Delete police" />
     <MESSAGE value="HOS view case" />
@@ -568,6 +573,7 @@
     <MESSAGE value="AG view files" />
     <MESSAGE value="Upload reference letter while bailing" />
     <MESSAGE value="Add station id when creating police" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add station id when creating police" />
+    <MESSAGE value="Criminal analysis display details" />
+    <option name="LAST_COMMIT_MESSAGE" value="Criminal analysis display details" />
   </component>
 </project>
